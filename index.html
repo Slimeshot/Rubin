@@ -563,6 +563,13 @@
 
 
 	<section class="solution">
+		<!-- <ul class="solution__select" id="customSelectCount">
+			<li><button value="1">до 3 человек</button></li>
+			<li><button value="2">до 5 человек</button></li>
+			<li><button value="3">до 12 человек</button></li>
+			<li><button value="4">до 16 человек</button></li>
+			<li><button value="5">до 32 человек</button></li>
+		</ul> -->
 		<div class="container">
 			<div class="solution__content">
 				<div class="menu solution__menu">
@@ -605,7 +612,7 @@
 								провести время</h2>
 							<span class="solution__subtitle">У нас можно уютно посидеть пару часиков или зависнуть на весь день (и даже ночь). Выпить шампанского с дамой или провести шумный корпоратив. Мы создадим все условия, остальное за тобой</span>
 						</div>
-						<div class="rooms__customBtn rooms__customBtn-1 customBtnBlack btn">
+						<div class="solution__customBtn solution__customBtn-1 customBtnBlack btn">
 							<div class="customBtnBlack-1">
 								<div class="customBtnBlack-2">
 									Получить предложение
@@ -624,20 +631,14 @@
 											почти любая компания</h3>
 										<span class="solution__item-subtitle">Сколько человек в вашей компании?</span>
 									</div>
-									<select name="asd" id="ds">
-										<option value="sd">adasd</option>
-										<option value="sd">sdf</option>
-										<option value="sd">tyutyu</option>
-										<option value="sd">truyrty</option>
-										<option value="sd">ghjghj</option>
-										<option value="sd">tyutyu</option>
-									</select>
-									<div class="solution__customSelect">
-										<div class="solution__customSelect-time">
-											<span class="solution__customSelect-hour">02</span>
-											<span class="solution__customSelect-title">Человвек</span>
+									<div class="solution__union">
+										<div class="solution__customSelectCount" id="qwe">
+											<div class="solution__customSelect-time">
+												<span class="solution__customSelect-hour">02</span>
+												<span class="solution__customSelect-people">Человвек</span>
+											</div>
+											<img src="images/dist/solution/pen.svg" alt="pen">
 										</div>
-										<img src="images/dist/solution/pen.svg" alt="pen">
 									</div>
 									<div class="solution__customRange customRange">
 										<input id="range" type="range" value="0" max="32">
@@ -656,17 +657,37 @@
 										<span class="solution__item-subtitle">А как долго хотел бы просидеть ты?</span>
 									</div>
 									<div class="solution__union">
-										<div class="solution__customSelect">
+										<!-- <select class="solution__select" name="customSelectHour" id="">
+											<option value="1">1 час</option>
+											<option value="2">2 час</option>
+											<option value="3">3 час</option>
+											<option value="4">4 час</option>
+											<option value="5">5 час</option>
+											<option value="6">6 час</option>
+											<option value="7">7 час</option>
+											<option value="8">8 час</option>
+											<option value="9">9 час</option>
+											<option value="10">10 час</option>
+											<option value="11">11 час</option>
+											<option value="12">12 час</option>
+										</select>
+										<select class="solution__select" name="customSelectMin" id="">
+											<option value="1">15 минут</option>
+											<option value="2">30 минут</option>
+											<option value="3">45 минут</option>
+
+										</select> -->
+										<div class="solution__customSelectTime">
 											<div class="solution__customSelect-time">
 												<span class="solution__customSelect-hour">02</span>
-												<span class="solution__customSelect-title">часа</span>
+												<span class="solution__customSelect-title">Часа</span>
 											</div>
 											<img src="images/dist/solution/pen.svg" alt="pen">
 										</div>
-										<div class="solution__customSelect">
+										<div class="solution__customSelectTime">
 											<div class="solution__customSelect-time">
-												<span class="solution__customSelect-hour">02</span>
-												<span class="solution__customSelect-title">часа</span>
+												<span class="solution__customSelect-hour">15</span>
+												<span class="solution__customSelect-title">Минут</span>
 											</div>
 											<img src="images/dist/solution/pen.svg" alt="pen">
 										</div>
@@ -804,7 +825,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="rooms__customBtn rooms__customBtn-2 customBtnBlack btn">
+						<div class="solution__customBtn solution__customBtn-2 customBtnBlack btn">
 							<div class="customBtnBlack-1">
 								<div class="customBtnBlack-2">
 									Получить предложение
@@ -1067,3 +1088,14 @@
 
 </body>
 </html>
+
+
+
+<div class="containers">
+	<ul class="card-stack">
+	  <button class="pick-button" type="button">pick</button>
+	  <!-- li are appenned here --> 
+	</ul>
+	<ul class="thrown thrown--selected"></ul>
+	<ul class="thrown thrown--rejected"></ul>
+  </div>
