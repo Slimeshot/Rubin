@@ -21,7 +21,7 @@
 
 <body>
 
-	<!-- <header class="header">
+	<header class="header">
 		<div class="container">
 			<div class="header__content">
 				<a href="#" class="header__phone">
@@ -31,11 +31,50 @@
 					<img src="images/dist/icon/logo-mobile.svg" alt="logo">
 				</div>
 				<div class="header__burger">
-					<img src="images/dist/icon/burger.svg" alt="burger">
+					<!-- <img src="images/dist/icon/burger.svg" alt="burger"> -->
 				</div>
 			</div>
 		</div>
-	</header> -->
+	</header>
+	<div class="header__menu">
+		<nav class="navigation header__navigation">
+			<ul class="navigation__menu">
+				<li class="navigation__list">
+					<a href="#" class="navigation__link">Контакты</a>
+				</li>
+				<li class="navigation__list">
+					<a href="#" class="navigation__link">Мероприятия</a>
+				</li>
+				<li class="navigation__list">
+					<a href="#" class="navigation__link">Комнаты</a>
+				</li>
+				<li class="navigation__list">
+					<a href="#" class="navigation__link">Команда</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="contacts header__contacts">
+			<ul class="contacts__menu">
+				<li class="contacts__list">
+					<a href="#" class="contacts__link">г. Санкт-Петербург, ул. Рубинштейна 20</a>
+				</li>
+				<li class="contacts__list">
+					<a href="#" class="contacts__link">СПБ, ул. Рубинштейна 20</a>
+				</li>
+				<li class="contacts__list">
+					<a href="tel:88007654323" class="contacts__link">8 (800) 765-43-23</a>
+				</li>
+			</ul>
+			<div class="header__customBtn customBtnWhite btn">
+				<div class="customBtnWhite-1">
+					<div class="customBtnWhite-2">
+						Заказать Звонок
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg"></div>
 
 	<section class="intro">
 		<img class="intro__bg-tablet" src="images/dist/intro/bg-intro-tablet.png" alt="bg">
@@ -109,22 +148,6 @@
 			</div>
 		</div>
 	</section>
-
-	<header class="header">
-		<div class="container">
-			<div class="header__content">
-				<a href="#" class="header__phone">
-					<img src="images/dist/icon/phone.svg" alt="phone">
-				</a>
-				<div class="header__logo">
-					<img src="images/dist/icon/logo-mobile.svg" alt="logo">
-				</div>
-				<div class="header__burger">
-					<img src="images/dist/icon/burger.svg" alt="burger">
-				</div>
-			</div>
-		</div>
-	</header>
 
 	<section class="services">
 		<div class="container">
@@ -942,10 +965,13 @@
 									<div class="solution__union">
 										<div class="solution__customSelectCount" id="qwe">
 											<div class="solution__customSelect-time">
-												<span class="solution__customSelect-hour">02</span>
+												<span class="solution__customSelect-hour solution__customSelectCount-hour">0</span>
 												<span class="solution__customSelect-people">Человвек</span>
 											</div>
-											<img src="images/dist/solution/pen.svg" alt="pen">
+											<div class="solution__customSelectTime-block">
+												<img src="images/dist/icon/minus.svg" class="solution__customSelecCount-minus" alt="icon">
+												<img src="images/dist/icon/plus.svg" class="solution__customSelecCount-plus" alt="icon">
+											</div>
 										</div>
 									</div>
 									<div class="solution__customRange customRange">
@@ -965,39 +991,21 @@
 										<span class="solution__item-subtitle">А как долго хотел бы просидеть ты?</span>
 									</div>
 									<div class="solution__union">
-										<!-- <select class="solution__select" name="customSelectHour" id="">
-											<option value="1">1 час</option>
-											<option value="2">2 час</option>
-											<option value="3">3 час</option>
-											<option value="4">4 час</option>
-											<option value="5">5 час</option>
-											<option value="6">6 час</option>
-											<option value="7">7 час</option>
-											<option value="8">8 час</option>
-											<option value="9">9 час</option>
-											<option value="10">10 час</option>
-											<option value="11">11 час</option>
-											<option value="12">12 час</option>
-										</select>
-										<select class="solution__select" name="customSelectMin" id="">
-											<option value="1">15 минут</option>
-											<option value="2">30 минут</option>
-											<option value="3">45 минут</option>
-
-										</select> -->
 										<div class="solution__customSelectTime">
 											<div class="solution__customSelect-time">
-												<span class="solution__customSelect-hour">02</span>
+												<span class="solution__customSelect-hour solution__customSelect-hours">0</span>
 												<span class="solution__customSelect-title">Часа</span>
 											</div>
-											<img src="images/dist/solution/pen.svg" alt="pen">
 										</div>
-										<div class="solution__customSelectTime">
+										<div class="solution__customSelectTime solution__customSelectTime-min">
 											<div class="solution__customSelect-time">
-												<span class="solution__customSelect-hour">15</span>
+												<span class="solution__customSelect-hour solution__customSelectTime-minutes">0</span>
 												<span class="solution__customSelect-title">Минут</span>
 											</div>
-											<img src="images/dist/solution/pen.svg" alt="pen">
+											<div class="solution__customSelectTime-block">
+												<img src="images/dist/icon/minus.svg" class="solution__customSelec-minus" alt="icon">
+												<img src="images/dist/icon/plus.svg" class="solution__customSelec-plus" alt="icon">
+											</div>
 										</div>
 										<div class="solution__customTimes customTimes">
 											<label class="customTimes__title" for="customTimes__count">Часы</label>
