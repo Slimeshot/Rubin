@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Rubin</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<header class="header header__black">
+		<div class="container">
+			<div class="header__content">
+				<a href="#" class="header__phone">
+					<img src="images/dist/icon/phone-white.svg" alt="phone">
+				</a>
+				<div class="header__logo">
+					<img src="images/dist/icon/logo-mobile.svg" alt="logo">
+				</div>
+				<div class="header__burger header__burger-white">
+				
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header__menu header__menu-black">
+		<nav class="navigation header__navigation">
+			<ul class="navigation__menu">
+				<li class="navigation__list">
+					<a href="#" class="navigation__link">Контакты</a>
+				</li>
+				<li class="navigation__list">
+					<a href="#" class="navigation__link">Мероприятия</a>
+				</li>
+				<li class="navigation__list">
+					<a href="#" class="navigation__link">Комнаты</a>
+				</li>
+				<li class="navigation__list">
+					<a href="#" class="navigation__link">Команда</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="contacts header__contacts">
+			<ul class="contacts__menu">
+				<li class="contacts__list">
+					<a href="#" class="contacts__link">г. Санкт-Петербург, ул. Рубинштейна 20</a>
+				</li>
+				<li class="contacts__list">
+					<a href="#" class="contacts__link">СПБ, ул. Рубинштейна 20</a>
+				</li>
+				<li class="contacts__list">
+					<a href="tel:88007654323" class="contacts__link">8 (800) 765-43-23</a>
+				</li>
+			</ul>
+			<div class="header__customBtn customBtnBlack btn">
+				<div class="customBtnBlack-1">
+					<div class="customBtnBlack-2">
+						Заказать Звонок
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg"></div>
+
+
+    <section class="cont">
+        <div class="menu cont__menu">
+            <div class="container">
+                <nav class="navigation menu__navigation">
+                    <ul class="navigation__menu">
+                        <li class="navigation__list">
+                            <a href="#" class="navigation__link">Контакты</a>
+                        </li>
+                        <li class="navigation__list">
+                            <a href="#" class="navigation__link">Мероприятия</a>
+                        </li>
+                        <li class="navigation__list">
+                            <a href="#" class="navigation__link">Комнаты</a>
+                        </li>
+                        <li class="navigation__list">
+                            <a href="#" class="navigation__link">Команда</a>
+                        </li>
+                    </ul>
+                </nav>
+                <img src="images/dist/logo-neon.png" alt="logo">
+                <div class="contacts menu__contacts">
+                    <ul class="contacts__menu">
+                        <li class="contacts__list">
+                            <a href="#" class="contacts__link">г. Санкт-Петербург, ул. Рубинштейна 20</a>
+                        </li>
+                        <li class="contacts__list">
+                            <a href="#" class="contacts__link">СПБ, ул. Рубинштейна 20</a>
+                        </li>
+                        <li class="navigation__list">
+                            <a href="tel:88007654323" class="contacts__link">8 (800) 765-43-23</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cont__map-tab btn ">
+            <img src="images/dist/contacts/map.png" alt="map">
+        </div>
+
+        <div class="cont__info">
+            <div class="cont__block">
+                <div class="cont__sect">
+                    <h1 class="cont__title">Контакты</h1>
+                    <a href="#" class="cont__btn cont__btn-tab btn">
+                        <img src="images/dist/icon/btn-red.svg" alt="btn">
+                    </a>
+                </div>
+                <div class="cont__group">
+                    <div class="cont__row">
+                        <span class="cont__label">Телефон</span>
+                        <a href="tel:89992137751" class="cont__text">+7 (999) 213-77-51</a>
+                    </div>
+                    <div class="cont__row">
+                        <span class="cont__label">Адрес</span>
+                        <a href="#" class="cont__text">Курляндская улица, 31, Санкт-Петербург</a>
+                    </div>
+                    <div class="cont__row">
+                        <span class="cont__label">Метро</span>
+                        <div class="cont__metro">
+                            <span class="cont__text cont__text-m"><img src="images/dist/icon/metro.svg" alt="metro">&nbsp;Балтийская</span>
+                            <span class="cont__text"><img src="images/dist/icon/metro.svg" alt="metro">&nbsp;Нарвская</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="cont__btn cont__btn-desc btn">
+                <img src="images/dist/icon/btn-red.svg" alt="btn">
+            </a>
+        </div>
+  
+        <div id='map'></div>
+    </section>
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2xpbWVzaG90IiwiYSI6ImNrcjI4M2Y1ODI2cDgzMXFodDFuMG9jYW8ifQ.nMAxLQ2UlUxVBCcM-M8vuQ';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/slimeshot/ckxeo2l0v2ic315phfvpmg0hm', // style URL
+            center: [34.441264, 61.751077],
+            zoom: 11 // starting zoom
+            
+        });
+         var marker = new mapboxgl.Marker({
+                    color: "#B12763",
+                    draggable: false
+                    }).setLngLat([34.441264, 61.751077])
+                    .addTo(map);
+    </script>
+
+    <!-- <div id='map'>
+
+    </div> -->
+    <!-- <script>
+        if (document.querySelector('.con')) {
+            mapboxgl.accessToken = 'pk.eyJ1Ijoic2xpbWVzaG90IiwiYSI6ImNrcjI4M2Y1ODI2cDgzMXFodDFuMG9jYW8ifQ.nMAxLQ2UlUxVBCcM-M8vuQ';
+            var map = new mapboxgl.Map({
+            center: [34.441264, 61.751077],
+            zoom: 11,
+            container: 'map',
+            style: 'mapbox://styles/slimeshot/ckxeo2l0v2ic315phfvpmg0hm'
+            });
+            var marker = new mapboxgl.Marker({
+                    color: "#FF0000",
+                    draggable: false
+                    }).setLngLat([34.441264, 61.751077])
+                    .addTo(map);
+        }
+    </script> -->
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
