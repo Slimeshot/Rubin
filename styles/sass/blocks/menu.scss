@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+        display: none;
+    }
+    img {
+        width: 16em;
+    }
+}
+.menu__navigation {
+    min-width: 46em;
+}
+.menu__contacts {
+    min-width: 46em;
+}

@@ -1,0 +1,42 @@
+.servicesItemBox {
+    background-color: $accent;
+    padding: 1px 1px;
+    clip-path: polygon(5% 0, 94% 0, 100% 9%, 100% 91%, 95% 100%, 5% 100%, 0 91%, 0 9%);
+    .servicesItemBox-1 {
+        background-color: #252629;
+        padding: 0.8em 0.8em;
+        clip-path: polygon(5% 0, 94% 0, 100% 9%, 100% 91%, 95% 100%, 5% 100%, 0 91%, 0 9%);
+        .servicesItemBox-2 {
+            background-color: #37383D;
+            padding: 3.2em 2.4em;
+            clip-path: polygon(5% 0, 94% 0, 100% 9%, 100% 91%, 95% 100%, 5% 100%, 0 91%, 0 9%);
+        }
+    }
+    @media (max-width: 1440px) {
+        .servicesItemBox-1 {
+            .servicesItemBox-2 {
+                padding: 2.4em 2.4em;
+            }
+        }
+    }
+    @media (max-width: 540px) {
+        .servicesItemBox-1 {
+            .servicesItemBox-2 {
+                padding: 20px 16px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

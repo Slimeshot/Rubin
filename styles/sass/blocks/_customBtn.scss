@@ -1,0 +1,118 @@
+.customBtnWhite {
+    cursor: pointer;
+    background-color: $accent;
+    padding: 0.05em 0.05em;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+    .customBtnWhite-1 {
+        background-color: #fff;
+        padding: 0.1em 0.1em;
+        clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+        .customBtnWhite-2 {
+            background-color: $accent;
+            padding: 0.8em 2em;
+            clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+        }
+    }
+    @media (max-width: 1440px) {
+        .customBtnWhite-1 {
+            .customBtnWhite-2 {
+                padding: 0.8em 2.2em; 
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        padding: 1px 1px;
+        .customBtnWhite-1 {
+            padding: 3px 3px;
+            .customBtnWhite-2 {
+                padding: 16px 70px;  
+            }
+        }
+    }
+    @media (max-width: 540px) {
+        padding: 1px 1px;
+        .customBtnWhite-1 {
+            padding: 3px 3px;
+            .customBtnWhite-2 {
+                padding: 16px 70px;  
+            }
+        }
+    }
+}
+
+
+.customBtnBlack {
+    cursor: pointer;
+    background-color: $accent;
+    padding: 0.05em 0.05em;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+    .customBtnBlack-1 {
+        background-color: #252629;
+        padding: 0.1em 0.1em;
+        clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+        .customBtnBlack-2 {
+            background-color: $accent;
+            padding: 0.8em 2em;
+            clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+        }
+    }
+    @media (max-width: 1024px) {
+        padding: 1px 1px;
+        .customBtnBlack-1 {
+            padding: 3px 3px;
+            .customBtnBlack-2 {
+                padding: 16px 70px;  
+            }
+        }
+    }
+    @media (max-width: 540px) {
+        padding: 1px 1px;
+        .customBtnBlack-1 {
+            padding: 3px 3px;
+            .customBtnBlack-2 {
+                padding: 16px 70px;  
+            }
+        }
+    }
+}
+
+
+
+
+.offer {
+    .customBtnWhite {
+        cursor: pointer;
+        background-color: $accent;
+        padding: 0.05em 0.05em;
+        clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+        .customBtnWhite-1 {
+            background-color: #fff;
+            padding: 0.1em 0.1em;
+            clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+            .customBtnWhite-2 {
+                background-color: $accent;
+                padding: 0.05em 0.05em;
+                clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+                .customBtnWhite-3 {
+                    background-color: #fff;
+                    color: $accent;
+                    padding: 0.8em 2em;
+                    clip-path: polygon(5% 0%, 95% 0%, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%);
+                }
+            }
+        }
+    }
+    // @media (max-width: 1024px) {
+    //     padding: 1px 1px;
+    //     .customBtnWhite-1 {
+    //         padding: 3px 3px;
+    //         .customBtnWhite-2 {
+    //             padding: 1px 1px; 
+    //             .customBtnWhite-3 {
+    //                 padding: 17px 55px;   
+    //             }
+    //         }
+    //     }
+    // }
+}
+
