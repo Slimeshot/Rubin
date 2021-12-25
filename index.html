@@ -39,21 +39,30 @@
 	<div class="header__menu">
 		<nav class="navigation header__navigation">
 			<ul class="navigation__menu">
-				<li class="navigation__list">
+				<li class="navigation__list navigation__list-hide">
 					<a href="contacts.html" class="navigation__link">Контакты</a>
 				</li>
-				<li class="navigation__list">
-					<a href="#" class="navigation__link">Мероприятия</a>
+				<li class="navigation__list navigation__list-open">
+					<div class="navigation__link navigation__sub-open">Мероприятия <svg class="navigation__sub-arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#252629"/></svg> </div>
+					<ul class="navigation__submenuTab">
+						<li><a class="navigation__submenu-link" href="birthday.html">День Рождения</a></li>
+						<li><a class="navigation__submenu-link" href="party.html">Вечеринка</a></li>
+						<li><a class="navigation__submenu-link" href="childbirthday.html">Детский день рождения</a></li>
+						<li><a class="navigation__submenu-link" href="romance.html">Романтический отдых</a></li>
+						<li><a class="navigation__submenu-link" href="playday.html">Выпускной</a></li>
+						<li><a class="navigation__submenu-link" href="wedding.html">Свадьба</a></li>
+						<li><a class="navigation__submenu-link" href="boyparty.html">Мальчишник</a></li>
+						<li><a class="navigation__submenu-link" href="girlparty.html">Девичник</a></li>
+						<li><a class="navigation__submenu-link" href="corporate.html">Корпоратив</a></li>
+					</ul>
 				</li>
-				<li class="navigation__list">
+				<li class="navigation__list navigation__list-hide">
 					<a href="premises.html" class="navigation__link">Комнаты</a>
 				</li>
-				<li class="navigation__list">
-					<a href="#" class="navigation__link">Команда</a>
-				</li>
+				
 			</ul>
 		</nav>
-		<div class="contacts header__contacts">
+		<div class="contacts header__contacts navigation__list-hide">
 			<ul class="contacts__menu">
 				<li class="contacts__list">
 					<a href="#" class="contacts__link">г. Санкт-Петербург, ул. Рубинштейна 20</a>
@@ -66,15 +75,48 @@
 				</li>
 			</ul>
 
-			<a href="#" class="header__customBtn custBtn custBtn-tab">
+			<div class="header__customBtn custBtn custBtn-tab" data-btn="openpopap">
 				<svg width="228" height="64" viewBox="0 0 228 64" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
 					<path d="M0.5 51.6777V12.3223L12.5094 0.5H215.491L227.5 12.3223V51.6777L215.491 63.5H12.5094L0.5 51.6777Z" stroke="#B12763" class='path-red-1'/>
 					<path d="M4 12.8276L13.6 4H214.4L224 12.8276V51.1724L214.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
 				</svg>
 				<span class="entry__tett">Заказать Звонок</span>
-			</a>
+			</div>
 		</div>
 	</div>
+
+
+	<div class="popup">
+		<div class="popup__content">
+			<h4 class="popup__title">Оставьте заявку и мы перезвоним</h4>
+			<form method="POST" class="popup__form form" id="Call">
+				<div class="form__span-inp">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input class="form__name" name="name" type="text" placeholder="Имя" required> 
+				</div>
+				<div class="form__span-inp">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
+				</div>
+				<div class="form__span-btn">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input type="submit" id="sendCall" value="Заказать звонок" class="form__btn-primary">
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
 	<div class="bg"></div>
 
 <div class="swiper app__swiper">
@@ -119,14 +161,24 @@
 									<a href="contacts.html" class="navigation__link">Контакты</a>
 								</li>
 								<li class="navigation__list">
-									<a href="#" class="navigation__link">Мероприятия</a>
+									<div class="navigation__link"><span>Мероприятия</span><svg class="navigation__sub-arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#252629"/></svg>
+										<ul class="navigation__link-submenu">
+											<li><a class="navigation__submenu-link" href="birthday.html">День Рождения</a></li>
+											<li><a class="navigation__submenu-link" href="party.html">Вечеринка</a></li>
+											<li><a class="navigation__submenu-link" href="childbirthday.html">Детский день рождения</a></li>
+											<li><a class="navigation__submenu-link" href="romance.html">Романтический отдых</a></li>
+											<li><a class="navigation__submenu-link" href="playday.html">Выпускной</a></li>
+											<li><a class="navigation__submenu-link" href="wedding.html">Свадьба</a></li>
+											<li><a class="navigation__submenu-link" href="boyparty.html">Мальчишник</a></li>
+											<li><a class="navigation__submenu-link" href="girlparty.html">Девичник</a></li>
+											<li><a class="navigation__submenu-link" href="corporate.html">Корпоратив</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="navigation__list">
 									<a href="premises.html" class="navigation__link">Комнаты</a>
 								</li>
-								<li class="navigation__list">
-									<a href="#" class="navigation__link">Команда</a>
-								</li>
+								
 							</ul>
 						</nav>
 						<a href="index.html">
@@ -151,27 +203,27 @@
 						<h1 class="intro__title">Найди грань<br>своих эмоций</h1>
 						<span class="intro__subtitle">Пространство для ярких вечеринок<span> и тусовок</span><br> в центре <a href="#" class="intro__info-title">Санкт-Петербурга</a></span>
 						<!-- <button class="btn intro__btn">Забронировать комнату</button> -->
-						<a href="#" class="intro__customBtn custBtn custBtn-desc">
+						<div class="intro__customBtn custBtn custBtn-desc" data-btn="openpopap">
 							<svg width="326" height="72" viewBox="0 0 326 72" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
 								<path d="M0.5 59.6777V12.3223L12.5094 0.5H313.491L325.5 12.3223V59.6777L313.491 71.5H12.5094L0.5 59.6777Z" stroke="#B12763" class='path-red-1'/>
 								<path d="M4 12.8276L13.6 4H312.4L322 12.8276V59.1724L312.4 68H13.6L4 59.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
 							</svg>
 							<span class="entry__tett">Забронировать комнату</span>
-						</a>
-						<a href="#" class="intro__customBtn custBtn custBtn-tab">
+						</div>
+						<div class="intro__customBtn custBtn custBtn-tab" data-btn="openpopap">
 							<svg width="248" height="64" viewBox="0 0 248 64" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
 								<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H235.491L247.5 12.3223V51.6777L235.491 63.5H12.5094Z" stroke="#B12763" class='path-red-1'/>
 								<path d="M4 12.8276L13.6 4H234.4L244 12.8276V51.1724L234.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
 							</svg>
 							<span class="entry__tett">Забронировать комнату</span>
-						</a>
-						<a href="#" class="intro__customBtn custBtn custBtn-mob">
+						</div>
+						<div class="intro__customBtn custBtn custBtn-mob" data-btn="openpopap">
 							<svg width="328" height="60" viewBox="0 0 328 60" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
 								<path d="M0.5 47.6777V12.3223L12.5094 0.5H315.491L327.5 12.3223V47.6777L315.491 59.5H12.5094L0.5 47.6777Z" stroke="#B12763" class='path-red-1'/>
 								<path d="M4 12.8276L13.6 4H314.4L324 12.8276V47.1724L314.4 56H13.6L4 47.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
 								<span class="entry__tett">Забронировать комнату</span>
 							</svg>
-						</a>
+						</div>
 						<span class="intro__text">Получи 1 час в подарок</span>
 					</div>
 					<div class="intro__bottom">
@@ -196,14 +248,24 @@
 									<a href="contacts.html" class="navigation__link">Контакты</a>
 								</li>
 								<li class="navigation__list">
-									<a href="#" class="navigation__link">Мероприятия</a>
+									<div class="navigation__link"><span>Мероприятия</span><svg class="navigation__sub-arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#fff"/></svg>
+										<ul class="navigation__link-submenu navigation__link-submenu-black">
+											<li><a class="navigation__submenu-link" href="birthday.html">День Рождения</a></li>
+											<li><a class="navigation__submenu-link" href="party.html">Вечеринка</a></li>
+											<li><a class="navigation__submenu-link" href="childbirthday.html">Детский день рождения</a></li>
+											<li><a class="navigation__submenu-link" href="romance.html">Романтический отдых</a></li>
+											<li><a class="navigation__submenu-link" href="playday.html">Выпускной</a></li>
+											<li><a class="navigation__submenu-link" href="wedding.html">Свадьба</a></li>
+											<li><a class="navigation__submenu-link" href="boyparty.html">Мальчишник</a></li>
+											<li><a class="navigation__submenu-link" href="girlparty.html">Девичник</a></li>
+											<li><a class="navigation__submenu-link" href="corporate.html">Корпоратив</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="navigation__list">
 									<a href="premises.html" class="navigation__link">Комнаты</a>
 								</li>
-								<li class="navigation__list">
-									<a href="#" class="navigation__link">Команда</a>
-								</li>
+								
 							</ul>
 						</nav>
 						<a href="index.html">
@@ -470,14 +532,24 @@
 									<a href="contacts.html" class="navigation__link">Контакты</a>
 								</li>
 								<li class="navigation__list">
-									<a href="#" class="navigation__link">Мероприятия</a>
+									<div class="navigation__link"><span>Мероприятия</span><svg class="navigation__sub-arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#252629"/></svg>
+										<ul class="navigation__link-submenu">
+											<li><a class="navigation__submenu-link" href="birthday.html">День Рождения</a></li>
+											<li><a class="navigation__submenu-link" href="party.html">Вечеринка</a></li>
+											<li><a class="navigation__submenu-link" href="childbirthday.html">Детский день рождения</a></li>
+											<li><a class="navigation__submenu-link" href="romance.html">Романтический отдых</a></li>
+											<li><a class="navigation__submenu-link" href="playday.html">Выпускной</a></li>
+											<li><a class="navigation__submenu-link" href="wedding.html">Свадьба</a></li>
+											<li><a class="navigation__submenu-link" href="boyparty.html">Мальчишник</a></li>
+											<li><a class="navigation__submenu-link" href="girlparty.html">Девичник</a></li>
+											<li><a class="navigation__submenu-link" href="corporate.html">Корпоратив</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="navigation__list">
 									<a href="premises.html" class="navigation__link">Комнаты</a>
 								</li>
-								<li class="navigation__list">
-									<a href="#" class="navigation__link">Команда</a>
-								</li>
+								
 							</ul>
 						</nav>
 						<a href="index.html">
@@ -573,7 +645,7 @@
 											</div>
 											<div class="tinder__about">
 												<span class="tinder__about-price"><span class="tinder__about-black">800</span> ₽/час</span>
-												<a href="#" class="tinder__about-link btn">Подробнее</a>
+												<a href="cashflow.html" class="tinder__about-link btn">Подробнее</a>
 											</div>
 										</div>
 									</div>
@@ -615,7 +687,7 @@
 											</div>
 											<div class="tinder__about">
 												<span class="tinder__about-price"><span class="tinder__about-black">900</span> ₽/час</span>
-												<a href="#" class="tinder__about-link btn">Подробнее</a>
+												<a href="tokyo.html" class="tinder__about-link btn">Подробнее</a>
 											</div>
 										</div>
 									</div>
@@ -658,7 +730,7 @@
 											</div>
 											<div class="tinder__about">
 												<span class="tinder__about-price"><span class="tinder__about-black">900</span> ₽/час</span>
-												<a href="#" class="tinder__about-link btn">Подробнее</a>
+												<a href="hawaii.html" class="tinder__about-link btn">Подробнее</a>
 											</div>
 										</div>
 									</div>
@@ -699,7 +771,7 @@
 											</div>
 											<div class="tinder__about">
 												<span class="tinder__about-price"><span class="tinder__about-black">1300</span> ₽/час</span>
-												<a href="#" class="tinder__about-link btn">Подробнее</a>
+												<a href="mafia.html" class="tinder__about-link btn">Подробнее</a>
 											</div>
 										</div>
 									</div>
@@ -738,7 +810,7 @@
 											</div>
 											<div class="tinder__about">
 												<span class="tinder__about-price"><span class="tinder__about-black">1600</span> ₽/час</span>
-												<a href="#" class="tinder__about-link btn">Подробнее</a>
+												<a href="manhattan.html" class="tinder__about-link btn">Подробнее</a>
 											</div>
 										</div>
 									</div>
@@ -832,14 +904,24 @@
 									<a href="contacts.html" class="navigation__link">Контакты</a>
 								</li>
 								<li class="navigation__list">
-									<a href="#" class="navigation__link">Мероприятия</a>
+									<div class="navigation__link"><span>Мероприятия</span><svg class="navigation__sub-arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#fff"/></svg>
+										<ul class="navigation__link-submenu navigation__link-submenu-black">
+											<li><a class="navigation__submenu-link" href="birthday.html">День Рождения</a></li>
+											<li><a class="navigation__submenu-link" href="party.html">Вечеринка</a></li>
+											<li><a class="navigation__submenu-link" href="childbirthday.html">Детский день рождения</a></li>
+											<li><a class="navigation__submenu-link" href="romance.html">Романтический отдых</a></li>
+											<li><a class="navigation__submenu-link" href="playday.html">Выпускной</a></li>
+											<li><a class="navigation__submenu-link" href="wedding.html">Свадьба</a></li>
+											<li><a class="navigation__submenu-link" href="boyparty.html">Мальчишник</a></li>
+											<li><a class="navigation__submenu-link" href="girlparty.html">Девичник</a></li>
+											<li><a class="navigation__submenu-link" href="corporate.html">Корпоратив</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="navigation__list">
 									<a href="premises.html" class="navigation__link">Комнаты</a>
 								</li>
-								<li class="navigation__list">
-									<a href="#" class="navigation__link">Команда</a>
-								</li>
+								
 							</ul>
 						</nav>
 						<a href="index.html">
@@ -867,13 +949,13 @@
 									провести время</h2>
 								<span class="solution__subtitle">У нас можно уютно посидеть пару часиков или зависнуть на весь день (и даже ночь). Выпить шампанского с дамой или провести шумный корпоратив. Мы создадим все условия, остальное за тобой</span>
 							</div>
-							<a href="#offerLink" class="solution__customBtn custBtn custBtn-desc swiper-next">
+							<div class="solution__customBtn custBtn custBtn-desc swiper-next">
 								<svg width="248" height="72" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
 									<path d="M.5 59.678V12.322L12.51.5h222.98l12.01 11.822v47.356L235.491 71.5H12.509L.5 59.678Z" stroke="#B12763" class='path-red-1'/>
 									<path d="M4 12.828 13.6 4h220.8l9.6 8.828v46.344L234.4 68H13.6L4 59.172V12.828Z" fill="#B12763" class='path-red-2'/>
 								</svg>
 								<span class="entry__tett">Получить предложение</span>
-							</a>
+							</div>
 
 						</div>
 						<div class="solution__choice">
@@ -980,7 +1062,7 @@
 														<input class="solution__radioinput" id="party" name="event" value="Вечеринки" type="radio">
 														<label class="solution__checkboxLabel" for="party">
 															<div class="solution__img">
-																<img src="images/dist/solution/bachelor.png" alt="party">
+																<img src="images/dist/solution/party.png" alt="party">
 															</div>
 															<span>Вечеринки</span>
 														</label>
@@ -989,7 +1071,7 @@
 														<input class="solution__radioinput" id="birthdayChild" name="event" value="Новый год" type="radio">
 														<label class="solution__checkboxLabel" for="birthdayChild">
 															<div class="solution__img">
-																<img src="images/dist/solution/newyear.png" alt="birthdayChild">
+																<img src="images/dist/solution/birthdaychild.png" alt="birthdayChild">
 															</div>
 															<span>Детсикй ДР</span>
 														</label>
@@ -998,7 +1080,7 @@
 														<input class="solution__radioinput" id="romance" name="event" value="Романтика" type="radio">
 														<label class="solution__checkboxLabel" for="romance">
 															<div class="solution__img">
-																<img src="images/dist/solution/friends.png" alt="romance">
+																<img src="images/dist/solution/romance.png" alt="romance">
 															</div>
 															<span>Романтика</span>
 														</label>
@@ -1007,7 +1089,7 @@
 														<input class="solution__radioinput" id="outlet" name="event" value="Выпускной" type="radio">
 														<label class="solution__checkboxLabel" for="outlet">
 															<div class="solution__img">
-																<img src="images/dist/solution/birthday.png" alt="outlet">
+																<img src="images/dist/solution/outlet.png" alt="outlet">
 															</div>
 															<span>Выпускной</span>
 														</label>
@@ -1025,7 +1107,7 @@
 														<input class="solution__radioinput" id="boysParty" name="event" value="Мальчишник" type="radio">
 														<label class="solution__checkboxLabel" for="boysParty">
 															<div class="solution__img">
-																<img src="images/dist/solution/bachelor.png" alt="boysParty">
+																<img src="images/dist/solution/boysparty.png" alt="boysParty">
 															</div>
 															<span>Мальчишник</span>
 														</label>
@@ -1034,7 +1116,7 @@
 														<input class="solution__radioinput" id="girlParty" name="event" value="Девичник" type="radio">
 														<label class="solution__checkboxLabel" for="girlParty">
 															<div class="solution__img">
-																<img src="images/dist/solution/wedding.png" alt="girlParty">
+																<img src="images/dist/solution/girlparty.png" alt="girlParty">
 															</div>
 															<span>Девичник</span>
 														</label>
@@ -1043,7 +1125,7 @@
 														<input class="solution__radioinput" id="сorporate" name="event" value="Корпоратив" type="radio">
 														<label class="solution__checkboxLabel" for="сorporate">
 															<div class="solution__img">
-																<img src="images/dist/solution/friends.png" alt="сorporate">
+																<img src="images/dist/solution/corporate.png" alt="сorporate">
 															</div>
 															<span>Корпоратив</span>
 														</label>
@@ -1144,9 +1226,7 @@
 								<li class="navigation__list">
 									<a href="premises.html" class="navigation__link">Комнаты</a>
 								</li>
-								<li class="navigation__list">
-									<a href="#" class="navigation__link">Команда</a>
-								</li>
+								
 							</ul>
 						</nav>
 						<div class="contacts menu-tablet-tablet">

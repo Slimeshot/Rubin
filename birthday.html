@@ -20,6 +20,34 @@
 </head>
 
 <body>
+	<div class="popup">
+		<div class="popup__content">
+			<h4 class="popup__title">Оставьте заявку и мы перезвоним</h4>
+			<form method="POST" class="popup__form form" id="Call">
+				<div class="form__span-inp">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input class="form__name" name="name" type="text" placeholder="Имя" required> 
+				</div>
+				<div class="form__span-inp">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
+				</div>
+				<div class="form__span-btn">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input type="submit" id="sendCall" value="Заказать звонок" class="form__btn-primary">
+				</div>
+			</form>
+		</div>
+	</div>
 	<header class="header">
 		<div class="container">
 			<div class="header__content">
@@ -86,7 +114,7 @@
 	<div class="bg"></div>
 
 
-    <section class="entry" data-events='birthday'>
+    <section class="entry birthday" data-events='birthday'>
         <div class="container">
             <div class="menu entry__menu">
 				<nav class="navigation menu__navigation">

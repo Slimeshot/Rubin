@@ -20,7 +20,34 @@
 </head>
 
 <body>
-
+    <div class="popup">
+		<div class="popup__content">
+			<h4 class="popup__title">Оставьте заявку и мы перезвоним</h4>
+			<form method="POST" class="popup__form form" id="Call">
+				<div class="form__span-inp">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input class="form__name" name="name" type="text" placeholder="Имя" required> 
+				</div>
+				<div class="form__span-inp">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
+				</div>
+				<div class="form__span-btn">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input type="submit" id="sendCall" value="Заказать звонок" class="form__btn-primary">
+				</div>
+			</form>
+		</div>
+	</div>
 	<header class="header header__black">
 		<div class="container">
 			<div class="header__content">
@@ -39,21 +66,30 @@
 	<div class="header__menu header__menu-black">
 		<nav class="navigation header__navigation">
 			<ul class="navigation__menu">
-				<li class="navigation__list">
+				<li class="navigation__list navigation__list-hide">
 					<a href="contacts.html" class="navigation__link">Контакты</a>
 				</li>
-				<li class="navigation__list">
-					<a href="#" class="navigation__link">Мероприятия</a>
+				<li class="navigation__list navigation__list-open">
+					<div class="navigation__link navigation__sub-open">Мероприятия <svg class="navigation__sub-arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#fff"/></svg> </div>
+					<ul class="navigation__submenuTab">
+						<li><a class="navigation__submenu-link" href="birthday.html">День Рождения</a></li>
+						<li><a class="navigation__submenu-link" href="party.html">Вечеринка</a></li>
+						<li><a class="navigation__submenu-link" href="childbirthday.html">Детский день рождения</a></li>
+						<li><a class="navigation__submenu-link" href="romance.html">Романтический отдых</a></li>
+						<li><a class="navigation__submenu-link" href="playday.html">Выпускной</a></li>
+						<li><a class="navigation__submenu-link" href="wedding.html">Свадьба</a></li>
+						<li><a class="navigation__submenu-link" href="boyparty.html">Мальчишник</a></li>
+						<li><a class="navigation__submenu-link" href="girlparty.html">Девичник</a></li>
+						<li><a class="navigation__submenu-link" href="corporate.html">Корпоратив</a></li>
+					</ul>
 				</li>
-				<li class="navigation__list">
+				<li class="navigation__list navigation__list-hide">
 					<a href="premises.html" class="navigation__link">Комнаты</a>
 				</li>
-				<li class="navigation__list">
-					<a href="#" class="navigation__link">Команда</a>
-				</li>
+				
 			</ul>
 		</nav>
-		<div class="contacts header__contacts">
+		<div class="contacts header__contacts navigation__list-hide">
 			<ul class="contacts__menu">
 				<li class="contacts__list">
 					<a href="#" class="contacts__link">г. Санкт-Петербург, ул. Рубинштейна 20</a>
@@ -65,13 +101,14 @@
 					<a href="tel:88007654323" class="contacts__link">8 (800) 765-43-23</a>
 				</li>
 			</ul>
-			<a href="#" class="header__customBtn custBtn custBtn-tab">
+
+			<div class="header__customBtn custBtn custBtn-tab" data-btn="openpopap">
 				<svg width="228" height="64" viewBox="0 0 228 64" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
 					<path d="M0.5 51.6777V12.3223L12.5094 0.5H215.491L227.5 12.3223V51.6777L215.491 63.5H12.5094L0.5 51.6777Z" stroke="#B12763" class='path-red-1'/>
 					<path d="M4 12.8276L13.6 4H214.4L224 12.8276V51.1724L214.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
 				</svg>
 				<span class="entry__tett">Заказать Звонок</span>
-			</a>
+			</div>
 		</div>
 	</div>
 	<div class="bg"></div>
@@ -118,14 +155,24 @@
                                 <a href="contacts.html" class="navigation__link">Контакты</a>
                             </li>
                             <li class="navigation__list">
-                                <a href="#" class="navigation__link">Мероприятия</a>
+                                <div class="navigation__link"><span>Мероприятия</span><svg class="navigation__sub-arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#fff"/></svg>
+                                    <ul class="navigation__link-submenu navigation__link-submenu-black">
+                                        <li><a class="navigation__submenu-link" href="birthday.html">День Рождения</a></li>
+                                        <li><a class="navigation__submenu-link" href="party.html">Вечеринка</a></li>
+                                        <li><a class="navigation__submenu-link" href="childbirthday.html">Детский день рождения</a></li>
+                                        <li><a class="navigation__submenu-link" href="romance.html">Романтический отдых</a></li>
+                                        <li><a class="navigation__submenu-link" href="playday.html">Выпускной</a></li>
+                                        <li><a class="navigation__submenu-link" href="wedding.html">Свадьба</a></li>
+                                        <li><a class="navigation__submenu-link" href="boyparty.html">Мальчишник</a></li>
+                                        <li><a class="navigation__submenu-link" href="girlparty.html">Девичник</a></li>
+                                        <li><a class="navigation__submenu-link" href="corporate.html">Корпоратив</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="navigation__list">
                                 <a href="premises.html" class="navigation__link">Комнаты</a>
                             </li>
-                            <li class="navigation__list">
-                                <a href="#" class="navigation__link">Команда</a>
-                            </li>
+                            
                         </ul>
                     </nav>
                     <a href="index.html">
@@ -176,21 +223,21 @@
                                     </div>
                                 </div>
                             </a>  -->
-                            <a href="#" class="apartment__customBtn custBtn custBtn-desc">
+                            <a href="#" class="apartment__customBtn custBtn custBtn-desc" data-btn="openpopap">
                                 <svg width="310" height="64" viewBox="0 0 310 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-red">
 									<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H297.491L309.5 12.3223V51.6777L297.491 63.5H12.5094Z" stroke="#B12763" class="path-red-1"/>
 									<path d="M4 12.8276L13.6 4H296.4L306 12.8276V51.1724L296.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class="path-red-2"/>
 								</svg>
                                 <span class="entry__tett"><span class="btn__line">Забронировать</span> <span class="btn__small">от</span> 800 <span class="btn__small">р/час</span></span>
                             </a>
-                            <a href="#" class="apartment__customBtn custBtn custBtn-tab">
+                            <a href="#" class="apartment__customBtn custBtn custBtn-tab" data-btn="openpopap">
                                 <svg width="310" height="64" viewBox="0 0 310 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-red">
 									<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H297.491L309.5 12.3223V51.6777L297.491 63.5H12.5094Z" stroke="#B12763" class="path-red-1"/>
 									<path d="M4 12.8276L13.6 4H296.4L306 12.8276V51.1724L296.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class="path-red-2"/>
 								</svg>
                                 <span class="entry__tett"><span class="btn__line">Забронировать</span> <span class="btn__small">от</span> 800 <span class="btn__small">р/час</span></span>
                             </a>
-                            <a href="#" class="apartment__customBtn custBtn custBtn-mob">
+                            <a href="#" class="apartment__customBtn custBtn custBtn-mob" data-btn="openpopap">
                                 <svg width="310" height="64" viewBox="0 0 310 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-red">
 									<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H297.491L309.5 12.3223V51.6777L297.491 63.5H12.5094Z" stroke="#B12763" class="path-red-1"/>
 									<path d="M4 12.8276L13.6 4H296.4L306 12.8276V51.1724L296.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class="path-red-2"/>

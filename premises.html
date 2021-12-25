@@ -20,6 +20,35 @@
 </head>
 
 <body>
+    <div class="popup">
+		<div class="popup__content">
+			<h4 class="popup__title">Оставьте заявку и мы перезвоним</h4>
+			<form method="POST" class="popup__form form" id="Call">
+				<div class="form__span-inp">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input class="form__name" name="name" type="text" placeholder="Имя" required> 
+				</div>
+				<div class="form__span-inp">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
+				</div>
+				<div class="form__span-btn">
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<span class="span-border"></span>
+					<input type="submit" id="sendCall" value="Заказать звонок" class="form__btn-primary">
+				</div>
+			</form>
+		</div>
+	</div>
+
 
 	<header class="header">
 		<div class="container">
@@ -30,8 +59,8 @@
 				<a href="index.html" class="header__logo">
 					<img src="images/dist/icon/logo-mobile.svg" alt="logo">
 				</a>
-				<div class="header__burger header__burger">
-				
+				<div class="header__burger">
+					<!-- <img src="images/dist/icon/burger.svg" alt="burger"> -->
 				</div>
 			</div>
 		</div>
@@ -39,21 +68,30 @@
 	<div class="header__menu">
 		<nav class="navigation header__navigation">
 			<ul class="navigation__menu">
-				<li class="navigation__list">
+				<li class="navigation__list navigation__list-hide">
 					<a href="contacts.html" class="navigation__link">Контакты</a>
 				</li>
-				<li class="navigation__list">
-					<a href="#" class="navigation__link">Мероприятия</a>
+				<li class="navigation__list navigation__list-open">
+					<div class="navigation__link navigation__sub-open">Мероприятия <svg class="navigation__sub-arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#252629"/></svg> </div>
+					<ul class="navigation__submenuTab">
+						<li><a class="navigation__submenu-link" href="birthday.html">День Рождения</a></li>
+						<li><a class="navigation__submenu-link" href="party.html">Вечеринка</a></li>
+						<li><a class="navigation__submenu-link" href="childbirthday.html">Детский день рождения</a></li>
+						<li><a class="navigation__submenu-link" href="romance.html">Романтический отдых</a></li>
+						<li><a class="navigation__submenu-link" href="playday.html">Выпускной</a></li>
+						<li><a class="navigation__submenu-link" href="wedding.html">Свадьба</a></li>
+						<li><a class="navigation__submenu-link" href="boyparty.html">Мальчишник</a></li>
+						<li><a class="navigation__submenu-link" href="girlparty.html">Девичник</a></li>
+						<li><a class="navigation__submenu-link" href="corporate.html">Корпоратив</a></li>
+					</ul>
 				</li>
-				<li class="navigation__list">
+				<li class="navigation__list navigation__list-hide">
 					<a href="premises.html" class="navigation__link">Комнаты</a>
 				</li>
-				<li class="navigation__list">
-					<a href="#" class="navigation__link">Команда</a>
-				</li>
+				
 			</ul>
 		</nav>
-		<div class="contacts header__contacts">
+		<div class="contacts header__contacts navigation__list-hide">
 			<ul class="contacts__menu">
 				<li class="contacts__list">
 					<a href="#" class="contacts__link">г. Санкт-Петербург, ул. Рубинштейна 20</a>
@@ -65,13 +103,14 @@
 					<a href="tel:88007654323" class="contacts__link">8 (800) 765-43-23</a>
 				</li>
 			</ul>
-			<a href="#" class="header__customBtn custBtn custBtn-tab">
+
+			<div class="header__customBtn custBtn custBtn-tab" data-btn="openpopap">
 				<svg width="228" height="64" viewBox="0 0 228 64" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
 					<path d="M0.5 51.6777V12.3223L12.5094 0.5H215.491L227.5 12.3223V51.6777L215.491 63.5H12.5094L0.5 51.6777Z" stroke="#B12763" class='path-red-1'/>
 					<path d="M4 12.8276L13.6 4H214.4L224 12.8276V51.1724L214.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
 				</svg>
 				<span class="entry__tett">Заказать Звонок</span>
-			</a>
+			</div>
 		</div>
 	</div>
 	<div class="bg"></div>
@@ -86,13 +125,22 @@
                                 <a href="contacts.html" class="navigation__link">Контакты</a>
                             </li>
                             <li class="navigation__list">
-                                <a href="#" class="navigation__link">Мероприятия</a>
+                                <div class="navigation__link"><span>Мероприятия</span><svg class="navigation__sub-arrow" width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#252629"/></svg>
+                                    <ul class="navigation__link-submenu">
+                                        <li><a class="navigation__submenu-link" href="birthday.html">День Рождения</a></li>
+                                        <li><a class="navigation__submenu-link" href="party.html">Вечеринка</a></li>
+                                        <li><a class="navigation__submenu-link" href="childbirthday.html">Детский день рождения</a></li>
+                                        <li><a class="navigation__submenu-link" href="romance.html">Романтический отдых</a></li>
+                                        <li><a class="navigation__submenu-link" href="playday.html">Выпускной</a></li>
+                                        <li><a class="navigation__submenu-link" href="wedding.html">Свадьба</a></li>
+                                        <li><a class="navigation__submenu-link" href="boyparty.html">Мальчишник</a></li>
+                                        <li><a class="navigation__submenu-link" href="girlparty.html">Девичник</a></li>
+                                        <li><a class="navigation__submenu-link" href="corporate.html">Корпоратив</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="navigation__list">
                                 <a href="premises.html" class="navigation__link">Комнаты</a>
-                            </li>
-                            <li class="navigation__list">
-                                <a href="#" class="navigation__link">Команда</a>
                             </li>
                         </ul>
                     </nav>
@@ -121,241 +169,35 @@
                         <h1 class="premises__title">Наши комнаты</h1>
                         <div class="premises__group">
                             <div class="premises__choise">
-                                <span>Количество человек:</span><span>до 35 человек</span>
+                                <span>Количество человек:</span>
+                                <div class="premises__choise-select premises__choise-select-1 select">
+                                    <span class="select__current">
+                                        <span class="premises__choise-word premises__choise-word-1"></span>
+                                        <svg width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="premises__choise-svg" d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#252629"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="premises__choise-menu premises__choise-menu-1 select__list"></ul>
+                                </div>
                             </div>
                             <div class="premises__choise">
-                                <span>Стоимость:</span><span>от 500 до 1000 руб/час</span>
+                                <span>Стоимость:</span>
+                                <div class="premises__choise-select premises__choise-select-2 select">
+                                    <span class="select__current">
+                                        <span class="premises__choise-word premises__choise-word-2"></span>
+                                        <svg width="10" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="premises__choise-svg" d="M5 3.781 1.7.481l-.943.943L5 5.667l4.243-4.243L8.3.481 5 3.781Z" fill="#252629"/>
+                                        </svg>
+                                    </span>
+                                    <ul class="premises__choise-menu premises__choise-menu-2 select__list"></ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                   
                     <div class="premises__swiper">
-                        <div class="premises__swiper-wrapper">
-                            <div class="swiper-slide premises__slide">
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <div class="tinder__slider">
-                    
-                                    <div class="swiper tinder__swiper">
-                                      
-                                        <div class="swiper-wrapper">
-                                       
-                                            <div class="swiper-slide tinder-slide">
-                                                <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/cash-1.jpg" alt="img">
-                                            </div>
-                                            <div class="swiper-slide tinder-slide">
-                                                <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/cash-2.jpg" alt="img">
-                                            </div>
-                                            <div class="swiper-slide tinder-slide">
-                                                <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/cash-3.jpg" alt="img">
-                                            </div>
-                                            <div class="swiper-slide tinder-slide">
-                                                <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/cash-4.jpg" alt="img">
-                                            </div>
-
-                                        
-                                        </div>
-
-                                            <!-- If we need pagination -->
-                                            <div class="swiper-pagination swiper-pagination-tinder"></div>
-                                    </div>
-                                </div>
-                                <div class="tinder__info">
-                                    <div class="tinder__row">
-                                        <h6 class="tinder__row-title">Cash Flow</h6>
-                                        <div class="tinder__row-block">
-                                            <span class="tinder__row-how">до <span class="tinder__row-black">8</span> человек</span>
-                                            <span class="tinder--stick"></span>
-                                            <span class="tinder__row-how"><span class="tinder__row-black">29,9</span> м2</span>
-                                        </div>
-                                    </div>	
-                                    <p class="tinder__text">Проведи время ярко в зале по мотивам культовой игры от Роберта Кийосаки. Устрой вечер настольных игр и докажи, что ты самый азартный участник! Или выбери другой путь – организуй поединок в Mortal Kombat.</p>	
-                                </div>
-                                <div class="tinder__about">
-                                    <span class="tinder__about-price"><span class="tinder__about-black">800</span> ₽/час</span>
-                                    <a href="cashflow.html" class="tinder__about-link btn">Подробнее</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide premises__slide">
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <div class="tinder__slider">
-                                    <!-- Slider main container -->
-                                    <div class="swiper tinder__swiper">
-                                        <!-- Additional required wrapper -->
-                                        <div class="swiper-wrapper">
-                                        <!-- Slides -->
-                                        <div class="swiper-slide tinder-slide">
-                                            <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/tokyo-1.jpg" alt="img">
-                                        </div>
-                                        <div class="swiper-slide tinder-slide">
-                                            <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/tokyo-2.jpg" alt="img">
-                                        </div>
-                                        <div class="swiper-slide tinder-slide">
-                                            <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/tokyo-3.jpg" alt="img">
-                                        </div>
-
-                                        
-                                        </div>
-
-                                            <!-- If we need pagination -->
-                                            <div class="swiper-pagination swiper-pagination-tinder"></div>
-                                    </div>
-                                </div>
-                                <div class="tinder__info">
-                                    <div class="tinder__row">
-                                        <h6 class="tinder__row-title">Токио</h6>
-                                        <div class="tinder__row-block">
-                                            <span class="tinder__row-how">до <span class="tinder__row-black">8</span> человек</span>
-                                            <span class="tinder--stick"></span>
-                                            <span class="tinder__row-how"><span class="tinder__row-black">20,9</span> м2</span>
-                                        </div>
-                                    </div>	
-                                    <p class="tinder__text">Центр футуристических небоскребов, умиротворенных садов и последних high-tech технологий. Прекрасный выбор для свидания или уютного вечера с близкими людьми.</p>	
-                                </div>
-                                <div class="tinder__about">
-                                    <span class="tinder__about-price"><span class="tinder__about-black">900</span> ₽/час</span>
-                                    <a href="tokyo.html" class="tinder__about-link btn">Подробнее</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide premises__slide">
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <div class="tinder__slider">
-                                    <!-- Slider main container -->
-                                    <div class="swiper tinder__swiper">
-                                        <!-- Additional required wrapper -->
-                                        <div class="swiper-wrapper">
-                                            <!-- Slides -->
-                                            <div class="swiper-slide tinder-slide">
-                                                <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/hawai-1.jpg" alt="img">
-                                            </div>
-                                            <div class="swiper-slide tinder-slide">
-                                                <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/hawai-2.jpg" alt="img">
-                                            </div>
-                                            <div class="swiper-slide tinder-slide">
-                                                <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/hawai-3.jpg" alt="img">
-                                            </div>	
-                                            <div class="swiper-slide tinder-slide">
-                                                <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/hawai-4.jpg" alt="img">
-                                            </div>	
-                                        </div>
-
-                                            <!-- If we need pagination -->
-                                            <div class="swiper-pagination swiper-pagination-tinder"></div>
-                                    </div>
-                                </div>
-                                <div class="tinder__info">
-                                    <div class="tinder__row">
-                                        <h6 class="tinder__row-title">Гавайи</h6>
-                                        <div class="tinder__row-block">
-                                            <span class="tinder__row-how">до <span class="tinder__row-black">10</span> человек</span>
-                                            <span class="tinder--stick"></span>
-                                            <span class="tinder__row-how"><span class="tinder__row-black">33,8</span> м2</span>
-                                        </div>
-                                    </div>	
-                                    <p class="tinder__text">Коктейли с зонтиком, легкий морской бриз и серфинг – все, что нужно, чтобы разбавить серые Питерские будни. Окунись в атмосферу райского курорта в зале “Гавайи”. Отличное место для отдыха в компании друзей.</p>	
-                                </div>
-                                <div class="tinder__about">
-                                    <span class="tinder__about-price"><span class="tinder__about-black">900</span> ₽/час</span>
-                                    <a href="hawaii.html" class="tinder__about-link btn">Подробнее</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide premises__slide">
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <div class="tinder__slider">
-                                    <!-- Slider main container -->
-                                    <div class="swiper tinder__swiper">
-                                        <!-- Additional required wrapper -->
-                                        <div class="swiper-wrapper">
-                                        <!-- Slides -->
-                                        <div class="swiper-slide tinder-slide">
-                                            <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/mafia-1.jpg" alt="img">
-                                        </div>
-                                        <div class="swiper-slide tinder-slide">
-                                            <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/mafia-2.jpg" alt="img">
-                                        </div>
-                                        <div class="swiper-slide tinder-slide">
-                                            <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/mafia-3.jpg" alt="img">
-                                        </div>
-                                        
-                                        </div>
-
-                                            <!-- If we need pagination -->
-                                            <div class="swiper-pagination swiper-pagination-tinder"></div>
-                                    </div>
-                                </div>
-                                <div class="tinder__info">
-                                    <div class="tinder__row">
-                                        <h6 class="tinder__row-title">Мафия</h6>
-                                        <div class="tinder__row-block">
-                                            <span class="tinder__row-how">до <span class="tinder__row-black">17</span> человек</span>
-                                            <span class="tinder--stick"></span>
-                                            <span class="tinder__row-how"><span class="tinder__row-black">36</span> м2</span>
-                                        </div>
-                                    </div>	
-                                    <p class="tinder__text">Готов погрузиться в атмосферу легендарной игры? Собери друзей и близких, и проведи вечер в стиле Мафии. Зал для компании до 17 человек.</p>	
-                                </div>
-                                <div class="tinder__about">
-                                    <span class="tinder__about-price"><span class="tinder__about-black">1300</span> ₽/час</span>
-                                    <a href="mafia.html" class="tinder__about-link btn">Подробнее</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide premises__slide">
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <div class="tinder__slider">
-                                    <!-- Slider main container -->
-                                    <div class="swiper tinder__swiper">
-                                        <!-- Additional required wrapper -->
-                                        <div class="swiper-wrapper">
-                                        <!-- Slides -->
-                                        <div class="swiper-slide tinder-slide">
-                                            <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/man-1.jpg" alt="img">
-                                        </div>
-                                        <div class="swiper-slide tinder-slide">
-                                            <img class="tinder-slide-img swiper-lazy" data-src="images/dist/rooms/man-2.jpg" alt="img">
-                                        </div>
-
-                                        
-                                        </div>
-
-                                            <!-- If we need pagination -->
-                                            <div class="swiper-pagination swiper-pagination-tinder"></div>
-                                    </div>
-                                </div>
-                                <div class="tinder__info">
-                                    <div class="tinder__row">
-                                        <h6 class="tinder__row-title">Манхэттен</h6>
-                                        <div class="tinder__row-block">
-                                            <span class="tinder__row-how">до <span class="tinder__row-black">23</span> человек</span>
-                                            <span class="tinder--stick"></span>
-                                            <span class="tinder__row-how"><span class="tinder__row-black">36</span> м2</span>
-                                        </div>
-                                    </div>	
-                                    <p class="tinder__text">Особенное место, которое дышит свободой и возможностями. Бетонные джунгли, где рождаются мечты в твоем распоряжении. Самый большой зал для шумной вечеринки. Только твоя музыка, только твои правила!</p>	
-                                </div>
-                                <div class="tinder__about">
-                                    <span class="tinder__about-price"><span class="tinder__about-black">1600</span> ₽/час</span>
-                                    <a href="manhattan.html" class="tinder__about-link btn">Подробнее</a>
-                                </div>
-                            </div>
-                        
-                        </div>
-
+                        <div class="premises__swiper-wrapper"></div>
                     </div>
-
                 </div>
             </div>
            
