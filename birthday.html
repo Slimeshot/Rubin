@@ -48,6 +48,146 @@
 			</form>
 		</div>
 	</div>
+
+	<div class="booking">
+		<div class="booking__content">
+			<div class="booking__left">
+				<div class="booking__block">
+					<h4 class="booking__title">Бронь комнаты</h4>
+					<span class="booking__subtitle booking__subtitle-descd">Проверьте данные и нажмите «Забронировать», мы позвоним для подтверждения бронирования</span>
+				</div>
+				<form method="POST" class="booking__form form" id="Call">
+
+					<div class="booking__group">
+						<div class="booking__data">
+							<div class="booking__span-inp booking__name">
+								<span class="span-border"></span>
+								<span class="span-border"></span>
+								<span class="span-border"></span>
+								<span class="span-border"></span>
+								<input class="form__name" name="name" type="text" placeholder="Имя" required> 
+							</div>
+							<div class="booking__span-inp booking__phone">
+								<span class="span-border"></span>
+								<span class="span-border"></span>
+								<span class="span-border"></span>
+								<span class="span-border"></span>
+								<input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
+							</div>
+						</div>
+	
+						<div class="booking__param">
+							<div class="booking__span-inp booking__room booking__input">
+								<span class="span-border"></span>
+								<span class="span-border"></span>
+								<span class="span-border"></span>
+								<span class="span-border"></span>
+								<input class="form__room form__input" name="phone" type="text" placeholder="Комната" data-price= "800" value="CASH FLOW" readonly required> 
+								<div class="booking__room-list form__input-list">
+									<span class="booking__room-name booking__list" data-price="800">CASH FLOW</span>
+									<span class="booking__room-name booking__list" data-price="900">Токио</span>
+									<span class="booking__room-name booking__list" data-price="900">Гавайи</span>
+									<span class="booking__room-name booking__list" data-price="1300">Мафия</span>
+									<span class="booking__room-name booking__list" data-price="1600">Манхэттен</span>
+								</div>
+							</div>
+							<div class="booking__much">
+								<div class="booking__span-inp booking__people booking__input">
+									<span class="span-border"></span>
+									<span class="span-border"></span>
+									<span class="span-border"></span>
+									<span class="span-border"></span>
+									<input class="form__people form__input" name="phone" type="text" placeholder="Гости" value="1 человек" readonly required> 
+									<div class="booking__people-list form__input-list">
+										<span class="booking__people-name booking__list">1 человек</span>
+										<span class="booking__people-name booking__list">2 человека</span>
+										<span class="booking__people-name booking__list">3 человека</span>
+										<span class="booking__people-name booking__list">4 человека</span>
+										<span class="booking__people-name booking__list">5 человека</span>
+										<span class="booking__people-name booking__list">6 человек</span>
+										<span class="booking__people-name booking__list">7 человек</span>
+										<span class="booking__people-name booking__list">8 человек</span>
+										<span class="booking__people-name booking__list">9 человек</span>
+										<span class="booking__people-name booking__list">10 человек</span>
+										<span class="booking__people-name booking__list">11 человек</span>
+										<span class="booking__people-name booking__list">12 человек</span>
+										<span class="booking__people-name booking__list">13 человек</span>
+										<span class="booking__people-name booking__list">14 человек</span>
+										<span class="booking__people-name booking__list">15 человек</span>
+									</div>
+								</div>
+								<div class="booking__span-inp booking__hour booking__input">
+									<span class="span-border"></span>
+									<span class="span-border"></span>
+									<span class="span-border"></span>
+									<span class="span-border"></span>
+									<input class="form__hour form__input" name="phone" type="text" placeholder="Время" value="1 час" readonly required> 
+									<div class="booking__hour-list form__input-list">
+										<span class="booking__hour-name booking__list">1 час</span>
+										<span class="booking__hour-name booking__list">2 часа</span>
+										<span class="booking__hour-name booking__list">3 часа</span>
+										<span class="booking__hour-name booking__list">4 часа</span>
+										<span class="booking__hour-name booking__list">5 часов</span>
+										<span class="booking__hour-name booking__list">6 часов</span>
+										<span class="booking__hour-name booking__list">7 часов</span>
+										<span class="booking__hour-name booking__list">8 часов</span>
+										<span class="booking__hour-name booking__list">9 часов</span>
+										<span class="booking__hour-name booking__list">10 часов</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="booking__nexus">
+						<div class="booking__span-btn">
+							<input type="submit" id="sendCall" value="Забронировать" class="booking__btn-primary btn">
+						</div>
+						<span class="booking__subtitle booking__subtitle-tab">Проверьте данные и нажмите «Забронировать», мы позвоним для подтверждения бронирования</span>
+					</div>
+				</form>
+			</div>
+			<div class="booking__middle">
+				<div class="booking__border"></div>
+			</div>
+			<div class="booking__right">
+				<div class="booking__img">
+					<img src="images/dist/rooms/cash-1.jpg" alt="room" class="booking__room-img">
+				</div>
+				<div class="booking__paper">
+					<div class="booking__info">
+						<div class="booking__item">
+							<div class="booking__label">Комната</div>
+							<div class="booking__word"><span class="booking__word-bold booking__word-room">CASH FLOW</span></div>
+						</div>
+						<div class="booking__item">
+							<div class="booking__label">Время</div>
+							<div class="booking__word booking__word-hour"><span class="booking__word-bold">1</span>
+								час</div>
+						</div>
+						<div class="booking__item">
+							<div class="booking__label">Гости</div>
+							<div class="booking__word booking__word-people"><span class="booking__word-bold">1</span>
+								человек</div>
+						</div>
+						<div class="booking__item">
+							<div class="booking__label">Стоимость</div>
+							<div class="booking__word"><span class="booking__word-bold booking__word-price">800</span>
+								₽</div>
+						</div>
+					</div>
+					<div class="booking__services">
+						<div class="booking__set">Караоке</div>
+						<div class="booking__set">Проектор</div>
+						<div class="booking__set">PS4</div>
+						<div class="booking__set">Качественный звук</div>
+						<div class="booking__set">Настольные игры</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header class="header">
 		<div class="container">
 			<div class="header__content">
@@ -198,86 +338,35 @@
                 </div>
                 <div class="entry__right">
 					<div class="entry__item ">
-						<svg width="426" preserveAspectRatio="none" height="280" viewBox="0 0 426 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path opacity="0.5" d="M20.2071 279.5L0.5 259.793V20.2071L20.2071 0.5H405.793L425.5 20.2071V259.793L405.793 279.5H20.2071Z" stroke="white"/>
-							<g filter="url(#filter0_bi_1300_11)">
-							<path d="M8 26L26 8H400L418 26V254L400 272H26L8 254V26Z" fill="white" fill-opacity="0.1"/>
-							<path opacity="0.5" d="M26.2071 271.5L8.5 253.793V26.2071L26.2071 8.5H399.793L417.5 26.2071V253.793L399.793 271.5H26.2071Z" stroke="white"/>
-							</g>
-							<defs>
-							<filter id="filter0_bi_1300_11" x="-78" y="-78" width="582" height="436" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-							<feGaussianBlur in="BackgroundImage" stdDeviation="43"/>
-							<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1300_11"/>
-							<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1300_11" result="shape"/>
-							<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-							<feOffset/>
-							<feGaussianBlur stdDeviation="34"/>
-							<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-							<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0"/>
-							<feBlend mode="normal" in2="shape" result="effect2_innerShadow_1300_11"/>
-							</filter>
-							</defs>
-						</svg>
-							
 						<div class="entry__block">
-							<span class="entry__label">Проектор
-								с большим<br>
-								экраном</span>
-							<span class="entry__text">”65”</span>
+							<span class="entry__label">Поместятся все твои друзья</span>
+							<span class="entry__text">Один из залов - точно подойдет</span>
 						</div>
-						<img src="images/dist/events/item-1.png" alt="img">
-					</div>
-
-					<div class="entry__item">
-						<svg width="426" preserveAspectRatio="none" height="280" viewBox="0 0 426 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path opacity="0.5" d="M20.2071 279.5L0.5 259.793V20.2071L20.2071 0.5H405.793L425.5 20.2071V259.793L405.793 279.5H20.2071Z" stroke="white"/>
-							<g filter="url(#filter0_bi_1300_11)">
-							<path d="M8 26L26 8H400L418 26V254L400 272H26L8 254V26Z" fill="white" fill-opacity="0.1"/>
-							<path opacity="0.5" d="M26.2071 271.5L8.5 253.793V26.2071L26.2071 8.5H399.793L417.5 26.2071V253.793L399.793 271.5H26.2071Z" stroke="white"/>
-							</g>
-							<defs>
-							<filter id="filter0_bi_1300_11" x="-78" y="-78" width="582" height="436" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-							<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-							<feGaussianBlur in="BackgroundImage" stdDeviation="43"/>
-							<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1300_11"/>
-							<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1300_11" result="shape"/>
-							<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-							<feOffset/>
-							<feGaussianBlur stdDeviation="34"/>
-							<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-							<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0"/>
-							<feBlend mode="normal" in2="shape" result="effect2_innerShadow_1300_11"/>
-							</filter>
-							</defs>
-						</svg>
-						<div class="entry__block">
-							<span class="entry__label">Игровые<br> 
-								приставки</span>
-							<span class="entry__text">MK11, Fifa 22, UFC 4,
-								Just Dance 21, Forza 4, 
-								Cyber Punk</span>
-						</div>
-						<img src="images/dist/events/item-3.png" alt="img">
+						<img src="images/dist/icon/solution/space.svg" alt="img">
 					</div>
 
 					<div class="entry__item">
 						<div class="entry__block">
-							<span class="entry__label">Караоке</span>
-							<span class="entry__text">Все для твоего
-								праздника</span>
+							<span class="entry__label">Проектор, караоке, приставки, настолки</span>
+							<span class="entry__text">Скучно не будет никому</span>
 						</div>
-						<img src="images/dist/events/item-2.png" alt="img">
+						<img src="images/dist/icon/solution/games.svg" alt="img">
+					</div>
+
+					<div class="entry__item">
+						<div class="entry__block">
+							<span class="entry__label">Напитки и закуски можешь взять с собой</span>
+							<span class="entry__text">Мы организуем сервировку</span>
+						</div>
+						<img src="images/dist/icon/solution/eat.svg" alt="img">
 					</div>
 					
 					<div class="entry__item">
 						<div class="entry__block">
-							<span class="entry__label">Настольные<br>
-								игры</span>
-							<span class="entry__text">Jenga, Монополия, 
-								Алиас, Мафия, Твистер, Имаджинариум</span>
+							<span class="entry__label">Пригласим ведущего, фотографа, диджея</span>
+							<span class="entry__text">Просто сообщи</span>
 						</div>
-						<img src="images/dist/events/item-4.png" alt="img">
+						<img src="images/dist/icon/solution/dj.svg" alt="img">
 					</div>
 
 				</div>
