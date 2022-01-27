@@ -21,33 +21,182 @@
 
 <body>
 	<div class="popup">
-		<div class="popup__content">
-			<h4 class="popup__title">Оставьте заявку и мы перезвоним</h4>
-			<form method="POST" class="popup__form form" id="Call">
-				<div class="form__span-inp">
-					<span class="span-border"></span>
-					<span class="span-border"></span>
-					<span class="span-border"></span>
-					<span class="span-border"></span>
-					<input class="form__name" name="name" type="text" placeholder="Имя" required> 
-				</div>
-				<div class="form__span-inp">
-					<span class="span-border"></span>
-					<span class="span-border"></span>
-					<span class="span-border"></span>
-					<span class="span-border"></span>
-					<input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
-				</div>
-				<div class="form__span-btn">
-					<span class="span-border"></span>
-					<span class="span-border"></span>
-					<span class="span-border"></span>
-					<span class="span-border"></span>
-					<input type="submit" id="sendCall" value="Заказать звонок" class="form__btn-primary">
-				</div>
-			</form>
-		</div>
-	</div>
+    <div class="popup__content">
+        <h4 class="popup__title">Оставьте заявку и мы перезвоним</h4>
+        <form method="POST" class="popup__form form" id="Call">
+            <div class="popup__span-inp">
+                <span class="span-border"></span>
+                <span class="span-border"></span>
+                <span class="span-border"></span>
+                <span class="span-border"></span>
+                <input class="form__name" name="name" type="text" placeholder="Имя" required> 
+            </div>
+            <div class="popup__span-inp">
+                <span class="span-border"></span>
+                <span class="span-border"></span>
+                <span class="span-border"></span>
+                <span class="span-border"></span>
+                <input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
+            </div>
+            <div class="popup__span-btn">
+                <span class="span-border"></span>
+                <span class="span-border"></span>
+                <span class="span-border"></span>
+                <span class="span-border"></span>
+                <input type="submit" id="sendCall" value="Заказать звонок" class="form__btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
+
+	<div class="booking">
+    <div class="booking__content">
+        <div class="booking__left">
+            <div class="booking__block">
+                <h4 class="booking__title">Бронь комнаты</h4>
+                <span class="booking__subtitle booking__subtitle-descd">Проверьте данные и нажмите «Забронировать», мы позвоним для подтверждения бронирования</span>
+            </div>
+            <form method="POST" class="booking__form form" id="Call">
+
+                <div class="booking__group">
+                    <div class="booking__data">
+                        <div class="booking__span-inp booking__name">
+                            <span class="span-border"></span>
+                            <span class="span-border"></span>
+                            <span class="span-border"></span>
+                            <span class="span-border"></span>
+                            <input class="form__name" name="name" type="text" placeholder="Имя" required> 
+                        </div>
+                        <div class="booking__span-inp booking__phone">
+                            <span class="span-border"></span>
+                            <span class="span-border"></span>
+                            <span class="span-border"></span>
+                            <span class="span-border"></span>
+                            <input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
+                        </div>
+                    </div>
+
+                    <div class="booking__param">
+                        <div class="booking__span-inp booking__room booking__input">
+                            <span class="span-border"></span>
+                            <span class="span-border"></span>
+                            <span class="span-border"></span>
+                            <span class="span-border"></span>
+                            <input class="form__room form__input" name="phone" type="text" placeholder="Комната" data-price= "800" value="CASH FLOW" readonly required> 
+                            <div class="booking__room-list form__input-list">
+                                <span class="booking__room-name booking__list" data-price="800">CASH FLOW</span>
+                                <span class="booking__room-name booking__list" data-price="900">Токио</span>
+                                <span class="booking__room-name booking__list" data-price="900">Гавайи</span>
+                                <span class="booking__room-name booking__list" data-price="1300">Мафия</span>
+                                <span class="booking__room-name booking__list" data-price="1600">Манхэттен</span>
+                            </div>
+                        </div>
+                        <div class="booking__much">
+                            <div class="booking__span-inp booking__people booking__input">
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <input class="form__people form__input" name="phone" type="text" placeholder="Гости" value="1 человек" readonly required> 
+                                <div class="booking__people-list form__input-list">
+                                    <span class="booking__people-name booking__list">1 человек</span>
+                                    <span class="booking__people-name booking__list">2 человека</span>
+                                    <span class="booking__people-name booking__list">3 человека</span>
+                                    <span class="booking__people-name booking__list">4 человека</span>
+                                    <span class="booking__people-name booking__list">5 человека</span>
+                                    <span class="booking__people-name booking__list">6 человек</span>
+                                    <span class="booking__people-name booking__list">7 человек</span>
+                                    <span class="booking__people-name booking__list">8 человек</span>
+                                    <span class="booking__people-name booking__list">9 человек</span>
+                                    <span class="booking__people-name booking__list">10 человек</span>
+                                    <span class="booking__people-name booking__list">11 человек</span>
+                                    <span class="booking__people-name booking__list">12 человек</span>
+                                    <span class="booking__people-name booking__list">13 человек</span>
+                                    <span class="booking__people-name booking__list">14 человек</span>
+                                    <span class="booking__people-name booking__list">15 человек</span>
+                                    <span class="booking__people-name booking__list">16 человек</span>
+                                    <span class="booking__people-name booking__list">17 человек</span>
+                                    <span class="booking__people-name booking__list">18 человек</span>
+                                    <span class="booking__people-name booking__list">19 человек</span>
+                                    <span class="booking__people-name booking__list">20 человек</span>
+                                    <span class="booking__people-name booking__list">21 человек</span>
+                                    <span class="booking__people-name booking__list">22 человек</span>
+                                    <span class="booking__people-name booking__list">23 человек</span>
+                                </div>
+                            </div>
+                            <div class="booking__span-inp booking__hour booking__input">
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <input class="form__hour form__input" name="phone" type="text" placeholder="Время" value="1 час" readonly required> 
+                                <div class="booking__hour-list form__input-list">
+                                    <span class="booking__hour-name booking__list">1 час</span>
+                                    <span class="booking__hour-name booking__list">2 часа</span>
+                                    <span class="booking__hour-name booking__list">3 часа</span>
+                                    <span class="booking__hour-name booking__list">4 часа</span>
+                                    <span class="booking__hour-name booking__list">5 часов</span>
+                                    <span class="booking__hour-name booking__list">6 часов</span>
+                                    <span class="booking__hour-name booking__list">7 часов</span>
+                                    <span class="booking__hour-name booking__list">8 часов</span>
+                                    <span class="booking__hour-name booking__list">9 часов</span>
+                                    <span class="booking__hour-name booking__list">10 часов</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="booking__nexus">
+                    <div class="booking__span-btn">
+                        <input type="submit" id="sendCall" value="Забронировать" class="booking__btn-primary btn">
+                    </div>
+                    <span class="booking__subtitle booking__subtitle-tab">Проверьте данные и нажмите «Забронировать», мы позвоним для подтверждения бронирования</span>
+                </div>
+            </form>
+        </div>
+        <div class="booking__middle">
+            <div class="booking__border"></div>
+        </div>
+        <div class="booking__right">
+            <div class="booking__img">
+                <img src="images/dist/rooms/cash-1.jpg" alt="room" class="booking__room-img">
+            </div>
+            <div class="booking__paper">
+                <div class="booking__info">
+                    <div class="booking__item">
+                        <div class="booking__label">Комната</div>
+                        <div class="booking__word"><span class="booking__word-bold booking__word-room">CASH FLOW</span></div>
+                    </div>
+                    <div class="booking__item">
+                        <div class="booking__label">Время</div>
+                        <div class="booking__word booking__word-hour"><span class="booking__word-bold">1</span>
+                            час</div>
+                    </div>
+                    <div class="booking__item">
+                        <div class="booking__label">Гости</div>
+                        <div class="booking__word booking__word-people"><span class="booking__word-bold">1</span>
+                            человек</div>
+                    </div>
+                    <div class="booking__item">
+                        <div class="booking__label">Стоимость</div>
+                        <div class="booking__word"><span class="booking__word-bold booking__word-price">800</span>
+                            ₽</div>
+                    </div>
+                </div>
+                <div class="booking__services">
+                    <div class="booking__set">Караоке</div>
+                    <div class="booking__set">Проектор</div>
+                    <div class="booking__set">PS4</div>
+                    <div class="booking__set">Качественный звук</div>
+                    <div class="booking__set">Настольные игры</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 	<header class="header">
 		<div class="container">
 			<div class="header__content">
@@ -63,6 +212,7 @@
 			</div>
 		</div>
 	</header>
+
 	<div class="header__menu">
 		<nav class="navigation header__navigation">
 						<ul class="navigation__menu">
@@ -95,13 +245,13 @@
 		<div class="contacts header__contacts navigation__list-hide">
 			<ul class="contacts__menu">
 				<li class="contacts__list">
-					<a href="#" class="contacts__link">г. Санкт-Петербург, ул. Рубинштейна 20</a>
+					<a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0,+20,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191002/data=!4m2!3m1!1s0x469631a8a8f1daa7:0x75dd05371210ce4f?sa=X&ved=2ahUKEwjQ9dnpwsr1AhWwlIsKHcKCBAgQ8gF6BAgaEAE" class="contacts__link">г. Санкт-Петербург, ул. Курляндская, 31</a>
 				</li>
 				<li class="contacts__list">
-					<a href="#" class="contacts__link">СПБ, ул. Рубинштейна 20</a>
+					<a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0,+20,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191002/data=!4m2!3m1!1s0x469631a8a8f1daa7:0x75dd05371210ce4f?sa=X&ved=2ahUKEwjQ9dnpwsr1AhWwlIsKHcKCBAgQ8gF6BAgaEAE" class="contacts__link">СПБ, ул. Курляндская, 31</a>
 				</li>
 				<li class="contacts__list">
-					<a href="tel:88007654323" class="contacts__link">8 (800) 765-43-23</a>
+					<a href="tel:88007654323" class="contacts__link">+7 (999) 213-77-51</a>
 				</li>
 			</ul>
 
@@ -114,6 +264,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="bg"></div>
 
 
@@ -155,13 +306,13 @@
                 <div class="contacts menu__contacts">
                     <ul class="contacts__menu">
                         <li class="contacts__list">
-                            <a href="#" class="contacts__link">г. Санкт-Петербург, ул. Рубинштейна 20</a>
+                            <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0,+20,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191002/data=!4m2!3m1!1s0x469631a8a8f1daa7:0x75dd05371210ce4f?sa=X&ved=2ahUKEwjQ9dnpwsr1AhWwlIsKHcKCBAgQ8gF6BAgaEAE" class="contacts__link">г. Санкт-Петербург, ул. Курляндская, 31</a>
                         </li>
                         <li class="contacts__list">
-                            <a href="#" class="contacts__link">СПБ, ул. Рубинштейна 20</a>
+                            <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A0%D1%83%D0%B1%D0%B8%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0,+20,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191002/data=!4m2!3m1!1s0x469631a8a8f1daa7:0x75dd05371210ce4f?sa=X&ved=2ahUKEwjQ9dnpwsr1AhWwlIsKHcKCBAgQ8gF6BAgaEAE" class="contacts__link">СПБ, ул. Курляндская, 31</a>
                         </li>
                         <li class="navigation__list">
-                            <a href="tel:88007654323" class="contacts__link">8 (800) 765-43-23</a>
+                            <a href="tel:+79992137751" class="contacts__link">+7 (999) 213-77-51</a>
                         </li>
                     </ul>
                 </div>
@@ -173,26 +324,23 @@
                         в Санкт-Петербурге</h1>
                     <span class="entry__subtitle">Сделаем ваш праздник<br> особенным и ярким</span>
 						
-					<a href="#spacesLink" class="entry__customBtn custBtn custBtn-desc">
-						<svg width="248" height="72" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-white'>
+					<a href="#rooms" class="entry__customBtn custBtn custBtn">
+						<svg width="248" height="72" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-white desc'>
 							<path d="M.5 59.678V12.322L12.51.5h222.98l12.01 11.822v47.356L235.491 71.5H12.509L.5 59.678Z" stroke="#fff" class='path-white-1'/>
 							<path d="M4 12.828 13.6 4h220.8l9.6 8.828v46.344L234.4 68H13.6L4 59.172V12.828Z" fill="#fff" class='path-white-2'/>
 						</svg>
-						<span class="entry__tett">Выбрать комнату</span>
-					</a>
-					<a href="#spacesLink" class="entry__customBtn custBtn custBtn-tab">
-						<svg width="248" height="64" viewBox="0 0 248 64" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-white'>
+
+						<svg width="248" height="64" viewBox="0 0 248 64" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-white tab'>
 							<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H235.491L247.5 12.3223V51.6777L235.491 63.5H12.5094Z" stroke="#fff" class='path-white-1'/>
 							<path d="M4 12.8276L13.6 4H234.4L244 12.8276V51.1724L234.4 60H13.6L4 51.1724V12.8276Z" fill="#fff" class='path-white-2'/>
 						</svg>
-						<span class="entry__tett">Выбрать комнату</span>
-					</a>
-					<a href="#spacesLink" class="entry__customBtn custBtn custBtn-mob">
-						<svg width="328" height="60" viewBox="0 0 328 60" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-white'>
+
+						<svg width="328" height="60" viewBox="0 0 328 60" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-white mob'>
 							<path d="M0.5 47.6777V12.3223L12.5094 0.5H315.491L327.5 12.3223V47.6777L315.491 59.5H12.5094L0.5 47.6777Z" stroke="white" class='path-white-1'/>
 							<path d="M4 12.8276L13.6 4H314.4L324 12.8276V47.1724L314.4 56H13.6L4 47.1724V12.8276Z" fill="white" class='path-white-2'/>
-							<span class="entry__tett">Выбрать комнату</span>
 						</svg>
+
+						<span class="entry__tett">Выбрать комнату</span>
 					</a>
 
                 </div>
@@ -236,7 +384,7 @@
 
 
 
-	<section class="spaces" id="spacesLink">
+	<section class="spaces" id="rooms">
 		<div class="container">
 			<div class="spaces__content">
 				<h3 class="spaces__title">Пространства<br> для праздника</h3>
@@ -277,7 +425,7 @@
 									<div class="spaces__room-logo"><img src="images/dist/rooms/cashflow_logo.svg" alt="cash"></div>
 									<div class="spaces__param">
 										<div class="spaces__label">До <span class="apartment__label-bold">8</span> человек</div>
-										<div class="spaces__label"><span class="apartment__label-bold">41,7</span> м2</div>
+										<div class="spaces__label"><span class="apartment__label-bold">17</span> м2</div>
 										<div class="spaces__label spaces__label-last">от <span class="apartment__label-bold">800</span> ₽/час</div>
 									</div>
 								</div>
@@ -292,13 +440,13 @@
 								<span class="spaces__item">Настольные игры</span>
 							</div>
 								
-							<a href="cashflow.html" class="space-info__customBtn custBtn custBtn-tab">
+							<div class="space-info__customBtn custBtn custBtn-tab" data-info="CASH FLOW">
 								<svg width="310" height="64" viewBox="0 0 310 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-red">
 									<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H297.491L309.5 12.3223V51.6777L297.491 63.5H12.5094Z" stroke="#B12763" class="path-red-1"/>
 									<path d="M4 12.8276L13.6 4H296.4L306 12.8276V51.1724L296.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class="path-red-2"/>
 								</svg>
 								<span class="entry__tett"><span class="btn__line">Забронировать</span> <span class="btn__small">от</span> 800 <span class="btn__small">р/час</span></span>
-							</a>
+							</div>
 						</div>
 	
 					</div>
@@ -336,7 +484,7 @@
 									<div class="spaces__room-logo"><img src="images/dist/rooms/tokyo_logo.svg" alt="tokyo"></div>
 									<div class="spaces__param">
 										<div class="spaces__label">До <span class="apartment__label-bold">8</span> человек</div>
-										<div class="spaces__label"><span class="apartment__label-bold">41,7</span> м2</div>
+										<div class="spaces__label"><span class="apartment__label-bold">15</span> м2</div>
 										<div class="spaces__label spaces__label-last">от <span class="apartment__label-bold">900</span> ₽/час</div>
 									</div>
 								</div>
@@ -350,13 +498,13 @@
 								<span class="spaces__item">Качественный звук</span>
 								<span class="spaces__item">Настольные игры</span>
 							</div>
-							<a href="tokyo.html" class="space-info__customBtn custBtn custBtn-tab">
+							<div class="space-info__customBtn custBtn custBtn-tab" data-info="Токио">
 								<svg width="310" height="64" viewBox="0 0 310 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-red">
 									<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H297.491L309.5 12.3223V51.6777L297.491 63.5H12.5094Z" stroke="#B12763" class="path-red-1"/>
 									<path d="M4 12.8276L13.6 4H296.4L306 12.8276V51.1724L296.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class="path-red-2"/>
 								</svg>
 								<span class="entry__tett"><span class="btn__line">Забронировать</span> <span class="btn__small">от</span> 900 <span class="btn__small">р/час</span></span>
-							</a>
+							</div>
 						</div>
 	
 					</div>
@@ -397,7 +545,7 @@
 									<div class="spaces__room-logo"><img src="images/dist/rooms/hawaii_logo.svg" alt="hawai"></div>
 									<div class="spaces__param">
 										<div class="spaces__label">До <span class="apartment__label-bold">10</span> человек</div>
-										<div class="spaces__label"><span class="apartment__label-bold">41,7</span> м2</div>
+										<div class="spaces__label"><span class="apartment__label-bold">14</span> м2</div>
 										<div class="spaces__label spaces__label-last">от <span class="apartment__label-bold">900</span> ₽/час</div>
 									</div>
 								</div>
@@ -412,13 +560,13 @@
 								<span class="spaces__item">Настольные игры</span>
 							</div>
 								
-							<a href="hawaii.html" class="space-info__customBtn custBtn custBtn-tab">
+							<div class="space-info__customBtn custBtn custBtn-tab" data-info="Гавайи">
 								<svg width="310" height="64" viewBox="0 0 310 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-red">
 									<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H297.491L309.5 12.3223V51.6777L297.491 63.5H12.5094Z" stroke="#B12763" class="path-red-1"/>
 									<path d="M4 12.8276L13.6 4H296.4L306 12.8276V51.1724L296.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class="path-red-2"/>
 								</svg>
 								<span class="entry__tett"><span class="btn__line">Забронировать</span> <span class="btn__small">от</span> 900 <span class="btn__small">р/час</span></span>
-							</a>
+							</div>
 						</div>
 	
 					</div>
@@ -456,7 +604,7 @@
 									<div class="spaces__room-logo"><img src="images/dist/rooms/MAFIA_logo.svg" alt="mafia"></div>
 									<div class="spaces__param">
 										<div class="spaces__label">До <span class="apartment__label-bold">17</span> человек</div>
-										<div class="spaces__label"><span class="apartment__label-bold">41,7</span> м2</div>
+										<div class="spaces__label"><span class="apartment__label-bold">24</span> м2</div>
 										<div class="spaces__label spaces__label-last">от <span class="apartment__label-bold">1300</span> ₽/час</div>
 									</div>
 								</div>
@@ -471,13 +619,13 @@
 								<span class="spaces__item">Настольные игры</span>
 							</div>
 								
-							<a href="mafia.html" class="space-info__customBtn custBtn custBtn-tab">
+							<div class="space-info__customBtn custBtn custBtn-tab" data-info="Мафия">
 								<svg width="310" height="64" viewBox="0 0 310 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-red">
 									<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H297.491L309.5 12.3223V51.6777L297.491 63.5H12.5094Z" stroke="#B12763" class="path-red-1"/>
 									<path d="M4 12.8276L13.6 4H296.4L306 12.8276V51.1724L296.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class="path-red-2"/>
 								</svg>
 								<span class="entry__tett"><span class="btn__line">Забронировать</span> <span class="btn__small">от</span> 1300 <span class="btn__small">р/час</span></span>
-							</a>
+							</div>
 						</div>
 	
 					</div>
@@ -512,7 +660,7 @@
 									<div class="spaces__room-logo"><img src="images/dist/rooms/manhattan_logo.svg" alt="man"></div>
 									<div class="spaces__param">
 										<div class="spaces__label">До <span class="apartment__label-bold">23</span> человек</div>
-										<div class="spaces__label"><span class="apartment__label-bold">41,7</span> м2</div>
+										<div class="spaces__label"><span class="apartment__label-bold">32</span> м2</div>
 										<div class="spaces__label spaces__label-last">от <span class="apartment__label-bold">1600</span> ₽/час</div>
 									</div>
 								</div>
@@ -527,50 +675,50 @@
 								<span class="spaces__item">Настольные игры</span>
 							</div>
 								
-							<a href="#" class="space-info__customBtn custBtn custBtn-tab">
+							<div class="space-info__customBtn custBtn custBtn-tab" data-info="Манхэттен">
 								<svg width="310" height="64" viewBox="0 0 310 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-red">
 									<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H297.491L309.5 12.3223V51.6777L297.491 63.5H12.5094Z" stroke="#B12763" class="path-red-1"/>
 									<path d="M4 12.8276L13.6 4H296.4L306 12.8276V51.1724L296.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class="path-red-2"/>
 								</svg>
 								<span class="entry__tett"><span class="btn__line">Забронировать</span> <span class="btn__small">от</span> 1600 <span class="btn__small">р/час</span></span>
-							</a>
+							</div>
 						</div>
 	
 					</div>
 				</div>
 
-				<div class="spaces__after">Не смогли определиться с комнатой?<br>
-					Поможем с выбором и расскажем подробно</div>
+				<div class="spaces__after">Понравился лофт?<br>
+					Оставьте заявку на бронирование
+				</div>
 
 
-				<a href="premises.html" class="spaces__customBtn custBtn custBtn-desc">
-					<svg width="248" height="72" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
+				<div class="spaces__customBtn custBtn custBtn" id="bookingSpace">
+					<svg width="248" height="72" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red desc'>
 						<path d="M.5 59.678V12.322L12.51.5h222.98l12.01 11.822v47.356L235.491 71.5H12.509L.5 59.678Z" stroke="#B12763" class='path-red-1'/>
 						<path d="M4 12.828 13.6 4h220.8l9.6 8.828v46.344L234.4 68H13.6L4 59.172V12.828Z" fill="#B12763" class='path-red-2'/>
 					</svg>
-					<span class="entry__tett">Подобрать персонально</span>
-				</a>
-				<a href="premises.html" class="spaces__customBtn custBtn custBtn-tab">
-					<svg width="248" height="64" viewBox="0 0 248 64" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
+
+					<svg width="248" height="64" viewBox="0 0 248 64" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red tab'>
 						<path d="M12.5094 63.5L0.5 51.6777V12.3223L12.5094 0.5H235.491L247.5 12.3223V51.6777L235.491 63.5H12.5094Z" stroke="#B12763" class='path-red-1'/>
 						<path d="M4 12.8276L13.6 4H234.4L244 12.8276V51.1724L234.4 60H13.6L4 51.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
 					</svg>
-					<span class="entry__tett">Подобрать персонально</span>
-				</a>
-				<a href="premises.html" class="spaces__customBtn custBtn custBtn-mob">
-					<svg width="328" height="60" viewBox="0 0 328 60" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
+
+
+					<svg width="328" height="60" viewBox="0 0 328 60" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red mob'>
 						<path d="M0.5 47.6777V12.3223L12.5094 0.5H315.491L327.5 12.3223V47.6777L315.491 59.5H12.5094L0.5 47.6777Z" stroke="#B12763" class='path-red-1'/>
 						<path d="M4 12.8276L13.6 4H314.4L324 12.8276V47.1724L314.4 56H13.6L4 47.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
-						<span class="entry__tett">Подобрать персонально</span>
 					</svg>
-				</a>
+
+					<span class="entry__tett">Забронировать</span>
+				</div>
+				
 			</div>
 		</div>
 	</section>
 
 
 
-	<section class="choise">
+	<section class="choise" id="#pack">
 		<div class="container">
 			<div class="chiose__content">
 				<div class="choise__row">
@@ -579,13 +727,13 @@
 					<div class="choise__text choise__text-desc">
 						<div class="choise__after">Не подходят тарифы?<br>
 							Мы соберем для вас <span class="choise__after-pink">персональный</span></div>
-						<a href="index.html" class="choise__customBtn custBtn">
-							<svg width="328" height="60" viewBox="0 0 328 60" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
-								<path d="M0.5 47.6777V12.3223L12.5094 0.5H315.491L327.5 12.3223V47.6777L315.491 59.5H12.5094L0.5 47.6777Z" stroke="#B12763" class='path-red-1'/>
-								<path d="M4 12.8276L13.6 4H314.4L324 12.8276V47.1724L314.4 56H13.6L4 47.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
-								<span class="entry__tett">Подобрать персонально</span>
-							</svg>
-						</a>
+							<div class="choise__customBtn custBtn"  data-btn="openpopap">
+								<svg width="328" height="60" viewBox="0 0 328 60" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
+									<path d="M0.5 47.6777V12.3223L12.5094 0.5H315.491L327.5 12.3223V47.6777L315.491 59.5H12.5094L0.5 47.6777Z" stroke="#B12763" class='path-red-1'/>
+									<path d="M4 12.8276L13.6 4H314.4L324 12.8276V47.1724L314.4 56H13.6L4 47.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
+									<span class="entry__tett">Подобрать персонально</span>
+								</svg>
+							</div>
 					</div>
 				
 				</div>
@@ -705,14 +853,15 @@
 				</div>
 				<div class="choise__text choise__text-tab">
 					<div class="choise__after">Не подходят тарифы?<br>
-						Мы соберем для вас <span class="choise__after-pink">персональный</span></div>
-					<a href="index.html" class="choise__customBtn custBtn">
+						Мы соберем для вас <span class="choise__after-pink">персональный</span>
+					</div>
+					<div class="choise__customBtn custBtn"  data-btn="openpopap">
 						<svg width="328" height="60" viewBox="0 0 328 60" fill="none" xmlns="http://www.w3.org/2000/svg" class='svg-red'>
 							<path d="M0.5 47.6777V12.3223L12.5094 0.5H315.491L327.5 12.3223V47.6777L315.491 59.5H12.5094L0.5 47.6777Z" stroke="#B12763" class='path-red-1'/>
 							<path d="M4 12.8276L13.6 4H314.4L324 12.8276V47.1724L314.4 56H13.6L4 47.1724V12.8276Z" fill="#B12763" class='path-red-2'/>
 							<span class="entry__tett">Подобрать персонально</span>
 						</svg>
-					</a>
+					</div>
 				</div>
 			</div>
 		</div>
