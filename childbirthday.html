@@ -49,150 +49,153 @@
     </div>
 </div>
 	<div class="booking">
-    <div class="booking__content">
-        <div class="booking__left">
-            <div class="booking__block">
-                <h4 class="booking__title">Бронь комнаты</h4>
-                <span class="booking__subtitle booking__subtitle-descd">Проверьте данные и нажмите «Забронировать», мы позвоним для подтверждения бронирования</span>
-            </div>
-            <form method="POST" class="booking__form form" id="Call">
-
-                <div class="booking__group">
-                    <div class="booking__data">
-                        <div class="booking__span-inp booking__name">
-                            <span class="span-border"></span>
-                            <span class="span-border"></span>
-                            <span class="span-border"></span>
-                            <span class="span-border"></span>
-                            <input class="form__name" name="name" type="text" placeholder="Имя" required> 
-                        </div>
-                        <div class="booking__span-inp booking__phone">
-                            <span class="span-border"></span>
-                            <span class="span-border"></span>
-                            <span class="span-border"></span>
-                            <span class="span-border"></span>
-                            <input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
-                        </div>
-                    </div>
-
-                    <div class="booking__param">
-                        <div class="booking__span-inp booking__room booking__input">
-                            <span class="span-border"></span>
-                            <span class="span-border"></span>
-                            <span class="span-border"></span>
-                            <span class="span-border"></span>
-                            <input class="form__room form__input" name="phone" type="text" placeholder="Комната" data-price= "800" value="CASH FLOW" readonly required> 
-                            <div class="booking__room-list form__input-list">
-                                <span class="booking__room-name booking__list" data-price="800">CASH FLOW</span>
-                                <span class="booking__room-name booking__list" data-price="900">Токио</span>
-                                <span class="booking__room-name booking__list" data-price="900">Гавайи</span>
-                                <span class="booking__room-name booking__list" data-price="1300">Мафия</span>
-                                <span class="booking__room-name booking__list" data-price="1600">Манхэттен</span>
+    <div class="booking__wrapper">
+        <div class="booking__content">
+            <div class="booking__left">
+                <div class="booking__block">
+                    <h4 class="booking__title">Бронь комнаты</h4>
+                    <span class="booking__subtitle booking__subtitle-descd">Проверьте данные и нажмите «Забронировать», мы позвоним для подтверждения бронирования</span>
+                </div>
+                <form method="POST" class="booking__form form" id="Call">
+    
+                    <div class="booking__group">
+                        <div class="booking__data">
+                            <div class="booking__span-inp booking__name">
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <input class="form__name" name="name" type="text" placeholder="Имя" required> 
+                            </div>
+                            <div class="booking__span-inp booking__phone">
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <span class="span-border"></span>
+                                <input class="form__phone" name="phone" type="text" placeholder="Телефон" required> 
                             </div>
                         </div>
-                        <div class="booking__much">
-                            <div class="booking__span-inp booking__people booking__input">
+    
+                        <div class="booking__param">
+                            <div class="booking__span-inp booking__room booking__input">
                                 <span class="span-border"></span>
                                 <span class="span-border"></span>
                                 <span class="span-border"></span>
                                 <span class="span-border"></span>
-                                <input class="form__people form__input" name="phone" type="text" placeholder="Гости" value="1 человек" readonly required> 
-                                <div class="booking__people-list form__input-list">
-                                    <span class="booking__people-name booking__list">1 человек</span>
-                                    <span class="booking__people-name booking__list">2 человека</span>
-                                    <span class="booking__people-name booking__list">3 человека</span>
-                                    <span class="booking__people-name booking__list">4 человека</span>
-                                    <span class="booking__people-name booking__list">5 человека</span>
-                                    <span class="booking__people-name booking__list">6 человек</span>
-                                    <span class="booking__people-name booking__list">7 человек</span>
-                                    <span class="booking__people-name booking__list">8 человек</span>
-                                    <span class="booking__people-name booking__list">9 человек</span>
-                                    <span class="booking__people-name booking__list">10 человек</span>
-                                    <span class="booking__people-name booking__list">11 человек</span>
-                                    <span class="booking__people-name booking__list">12 человек</span>
-                                    <span class="booking__people-name booking__list">13 человек</span>
-                                    <span class="booking__people-name booking__list">14 человек</span>
-                                    <span class="booking__people-name booking__list">15 человек</span>
-                                    <span class="booking__people-name booking__list">16 человек</span>
-                                    <span class="booking__people-name booking__list">17 человек</span>
-                                    <span class="booking__people-name booking__list">18 человек</span>
-                                    <span class="booking__people-name booking__list">19 человек</span>
-                                    <span class="booking__people-name booking__list">20 человек</span>
-                                    <span class="booking__people-name booking__list">21 человек</span>
-                                    <span class="booking__people-name booking__list">22 человек</span>
-                                    <span class="booking__people-name booking__list">23 человек</span>
+                                <input class="form__room form__input" name="phone" type="text" placeholder="Комната" data-price= "800" value="CASH FLOW" readonly required> 
+                                <div class="booking__room-list form__input-list">
+                                    <span class="booking__room-name booking__list" data-price="800">CASH FLOW</span>
+                                    <span class="booking__room-name booking__list" data-price="900">Токио</span>
+                                    <span class="booking__room-name booking__list" data-price="900">Гавайи</span>
+                                    <span class="booking__room-name booking__list" data-price="1300">Мафия</span>
+                                    <span class="booking__room-name booking__list" data-price="1600">Манхэттен</span>
                                 </div>
                             </div>
-                            <div class="booking__span-inp booking__hour booking__input">
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <span class="span-border"></span>
-                                <input class="form__hour form__input" name="phone" type="text" placeholder="Время" value="1 час" readonly required> 
-                                <div class="booking__hour-list form__input-list">
-                                    <span class="booking__hour-name booking__list">1 час</span>
-                                    <span class="booking__hour-name booking__list">2 часа</span>
-                                    <span class="booking__hour-name booking__list">3 часа</span>
-                                    <span class="booking__hour-name booking__list">4 часа</span>
-                                    <span class="booking__hour-name booking__list">5 часов</span>
-                                    <span class="booking__hour-name booking__list">6 часов</span>
-                                    <span class="booking__hour-name booking__list">7 часов</span>
-                                    <span class="booking__hour-name booking__list">8 часов</span>
-                                    <span class="booking__hour-name booking__list">9 часов</span>
-                                    <span class="booking__hour-name booking__list">10 часов</span>
+                            <div class="booking__much">
+                                <div class="booking__span-inp booking__people booking__input">
+                                    <span class="span-border"></span>
+                                    <span class="span-border"></span>
+                                    <span class="span-border"></span>
+                                    <span class="span-border"></span>
+                                    <input class="form__people form__input" name="phone" type="text" placeholder="Гости" value="1 человек" readonly required> 
+                                    <div class="booking__people-list form__input-list">
+                                        <span class="booking__people-name booking__list">1 человек</span>
+                                        <span class="booking__people-name booking__list">2 человека</span>
+                                        <span class="booking__people-name booking__list">3 человека</span>
+                                        <span class="booking__people-name booking__list">4 человека</span>
+                                        <span class="booking__people-name booking__list">5 человека</span>
+                                        <span class="booking__people-name booking__list">6 человек</span>
+                                        <span class="booking__people-name booking__list">7 человек</span>
+                                        <span class="booking__people-name booking__list">8 человек</span>
+                                        <span class="booking__people-name booking__list">9 человек</span>
+                                        <span class="booking__people-name booking__list">10 человек</span>
+                                        <span class="booking__people-name booking__list">11 человек</span>
+                                        <span class="booking__people-name booking__list">12 человек</span>
+                                        <span class="booking__people-name booking__list">13 человек</span>
+                                        <span class="booking__people-name booking__list">14 человек</span>
+                                        <span class="booking__people-name booking__list">15 человек</span>
+                                        <span class="booking__people-name booking__list">16 человек</span>
+                                        <span class="booking__people-name booking__list">17 человек</span>
+                                        <span class="booking__people-name booking__list">18 человек</span>
+                                        <span class="booking__people-name booking__list">19 человек</span>
+                                        <span class="booking__people-name booking__list">20 человек</span>
+                                        <span class="booking__people-name booking__list">21 человек</span>
+                                        <span class="booking__people-name booking__list">22 человек</span>
+                                        <span class="booking__people-name booking__list">23 человек</span>
+                                    </div>
+                                </div>
+                                <div class="booking__span-inp booking__hour booking__input">
+                                    <span class="span-border"></span>
+                                    <span class="span-border"></span>
+                                    <span class="span-border"></span>
+                                    <span class="span-border"></span>
+                                    <input class="form__hour form__input" name="phone" type="text" placeholder="Время" value="1 час" readonly required> 
+                                    <div class="booking__hour-list form__input-list">
+                                        <span class="booking__hour-name booking__list">1 час</span>
+                                        <span class="booking__hour-name booking__list">2 часа</span>
+                                        <span class="booking__hour-name booking__list">3 часа</span>
+                                        <span class="booking__hour-name booking__list">4 часа</span>
+                                        <span class="booking__hour-name booking__list">5 часов</span>
+                                        <span class="booking__hour-name booking__list">6 часов</span>
+                                        <span class="booking__hour-name booking__list">7 часов</span>
+                                        <span class="booking__hour-name booking__list">8 часов</span>
+                                        <span class="booking__hour-name booking__list">9 часов</span>
+                                        <span class="booking__hour-name booking__list">10 часов</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="booking__nexus">
-                    <div class="booking__span-btn">
-                        <input type="submit" id="sendCall" value="Забронировать" class="booking__btn-primary btn">
+    
+    
+                    <div class="booking__nexus">
+                        <div class="booking__span-btn">
+                            <input type="submit" id="sendCall" value="Забронировать" class="booking__btn-primary btn">
+                        </div>
+                        <span class="booking__subtitle booking__subtitle-tab">Проверьте данные и нажмите «Забронировать», мы позвоним для подтверждения бронирования</span>
                     </div>
-                    <span class="booking__subtitle booking__subtitle-tab">Проверьте данные и нажмите «Забронировать», мы позвоним для подтверждения бронирования</span>
-                </div>
-            </form>
-        </div>
-        <div class="booking__middle">
-            <div class="booking__border"></div>
-        </div>
-        <div class="booking__right">
-            <div class="booking__img">
-                <img src="images/dist/rooms/cash-1.jpg" alt="room" class="booking__room-img">
+                </form>
             </div>
-            <div class="booking__paper">
-                <div class="booking__info">
-                    <div class="booking__item">
-                        <div class="booking__label">Комната</div>
-                        <div class="booking__word"><span class="booking__word-bold booking__word-room">CASH FLOW</span></div>
-                    </div>
-                    <div class="booking__item">
-                        <div class="booking__label">Время</div>
-                        <div class="booking__word booking__word-hour"><span class="booking__word-bold">1</span>
-                            час</div>
-                    </div>
-                    <div class="booking__item">
-                        <div class="booking__label">Гости</div>
-                        <div class="booking__word booking__word-people"><span class="booking__word-bold">1</span>
-                            человек</div>
-                    </div>
-                    <div class="booking__item">
-                        <div class="booking__label">Стоимость</div>
-                        <div class="booking__word"><span class="booking__word-bold booking__word-price">800</span>
-                            ₽</div>
-                    </div>
+            <div class="booking__middle">
+                <div class="booking__border"></div>
+            </div>
+            <div class="booking__right">
+                <div class="booking__img">
+                    <img src="images/dist/rooms/cash-1.jpg" alt="room" class="booking__room-img">
                 </div>
-                <div class="booking__services">
-                    <div class="booking__set">Караоке</div>
-                    <div class="booking__set">Проектор</div>
-                    <div class="booking__set">PS4</div>
-                    <div class="booking__set">Качественный звук</div>
-                    <div class="booking__set">Настольные игры</div>
+                <div class="booking__paper">
+                    <div class="booking__info">
+                        <div class="booking__item">
+                            <div class="booking__label">Комната</div>
+                            <div class="booking__word"><span class="booking__word-bold booking__word-room">CASH FLOW</span></div>
+                        </div>
+                        <div class="booking__item">
+                            <div class="booking__label">Время</div>
+                            <div class="booking__word booking__word-hour"><span class="booking__word-bold">1</span>
+                                час</div>
+                        </div>
+                        <div class="booking__item">
+                            <div class="booking__label">Гости</div>
+                            <div class="booking__word booking__word-people"><span class="booking__word-bold">1</span>
+                                человек</div>
+                        </div>
+                        <div class="booking__item">
+                            <div class="booking__label">Стоимость</div>
+                            <div class="booking__word"><span class="booking__word-bold booking__word-price">800</span>
+                                ₽</div>
+                        </div>
+                    </div>
+                    <div class="booking__services">
+                        <div class="booking__set">Караоке</div>
+                        <div class="booking__set">Проектор</div>
+                        <div class="booking__set">PS4</div>
+                        <div class="booking__set">Качественный звук</div>
+                        <div class="booking__set">Настольные игры</div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 
