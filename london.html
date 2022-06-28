@@ -11,31 +11,55 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDXKSC7PST"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'G-ZDXKSC7PST');
   </script>
 
 
   <!-- Meta Pixel Code -->
-  <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
+  <!-- <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-      window.eventPixelId = Math.floor((Math.random() * 100000000))
-      fbq('init', '2909709932584817');
-      fbq('track', 'PageView', {eventID: eventPixelId});
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=2909709932584817&ev=PageView&noscript=1"
-      /></noscript>
-      <!-- End Meta Pixel Code -->
+    window.eventPixelId = Math.floor((Math.random() * 100000000))
+    fbq('init', '2909709932584817');
+    fbq('track', 'PageView', {
+      eventID: eventPixelId
+    });
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2909709932584817&ev=PageView&noscript=1" /></noscript> -->
+  <!-- End Meta Pixel Code -->
 
+
+  <script type="text/javascript">
+    ! function () {
+      var t = document.createElement("script");
+      t.type = "text/javascript", t.async = !0, t.src = 'https://vk.com/js/api/openapi.js?169', t.onload = function () {
+        VK.Retargeting.Init("VK-RTRG-1409558-1hhT8"), VK.Retargeting.Hit()
+      }, document.head.appendChild(t)
+    }();
+  </script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1409558-1hhT8" style="position:fixed; left:-999px;"
+      alt="" /></noscript>
 
     <!-- HTML Meta Tags -->
     <title>Комната Лондон в Rubinloft</title>
@@ -154,6 +178,7 @@
                     <input type="submit" id="sendCall" value="Заказать звонок" class="form__btn-primary">
                 </div>
             </form>
+            <span class="popup__policy">Оставляя заявку вы соглашаетесь на<br> <a href="/policy.html">обработку данных</a></span>
             <div class="popup__succes">
                 <div class="popup__label">Заявка<br> отправлена</div>
                 <div class="popup__text popup__margin">Наш менеджер свяжется с вами в течение<br> 30 минут для уточнения
@@ -309,6 +334,8 @@
                                         <span class="booking__hour-name booking__list">8 часов</span>
                                         <span class="booking__hour-name booking__list">9 часов</span>
                                         <span class="booking__hour-name booking__list">10 часов</span>
+                                        <span class="booking__hour-name booking__list">11 часов</span>
+                                        <span class="booking__hour-name booking__list">12 часов</span>
                                     </div>
                                 </div>
                             </div>
@@ -320,7 +347,9 @@
                         <div class="booking__span-btn">
                             <input type="submit" id="sendBooking" value="Забронировать"
                                 class="booking__btn-primary btn">
+                                
                         </div>
+                        <span class="popup__policy">Оставляя заявку вы соглашаетесь на<br> <a href="/policy.html">обработку данных</a></span>
                         <span class="booking__subtitle booking__subtitle-tab">Проверьте данные и нажмите
                             «Забронировать», мы позвоним для подтверждения бронирования</span>
                     </div>
